@@ -38,7 +38,7 @@
 ## 📁 项目结构
 
 - `Paper_metadata_download.py`: 下载论文元数据
-- `HF-day-paper-deepseek.py`: 主程序，处理论文解读
+- `Psy-day-paper-deepseek.py`: 主程序，处理论文解读
 - `newsletter.py`: 生成日报
 - `stats.py`: 统计分析和可视化
 - `tts.py`: 语音合成
@@ -46,7 +46,7 @@
 
 ### 📂 文件夹结构
 
-- `HF-day-paper-deepseek/`: 存放处理后的论文数据和每日总结
+- `Psy-day-paper-deepseek/`: 存放处理后的论文数据和每日总结
 - `Paper_metadata_download/`: 存放下载的论文元数据
 - `newsletters/`: 存放生成的日报文件（Markdown 和 HTML）
 - `images/`: 存放日报图片（关键词云图、趋势图等）

@@ -1,0 +1,261 @@
+name: Psy-day-paper-deepseek
+
+on:
+  workflow_run:
+    workflows: ["Paper_metadata_download"]
+    types:
+      - completed
+  schedule:
+    - cron: '0 8 * * 1-5'  # 每周一到周五 UTC 8:00 (北京时间 16:00) 运行
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '指定要处理的历史数据日期 (YYYY-MM-DD格式)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    outputs:
+      is_authorized: ${{ steps.check_repo.outputs.is_authorized }}
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install cryptography
+    
+    - name: Verify repository
+      id: check_repo
+      run: |
+        # 获取仓库URL
+        REPO_URL=$(git config --get remote.origin.url)
+        echo "Repository URL: $REPO_URL"
+        
+        # 检查是否是原始仓库
+        if [[ "$REPO_URL" == *"2404589803/hf-daily-paper-newsletter-chinese"* ]]; then
+          echo "is_authorized=true" >> $GITHUB_OUTPUT
+          echo "Repository is authorized"
+        else
+          echo "is_authorized=false" >> $GITHUB_OUTPUT
+          echo "Repository is not authorized"
+        fi
+  
+  process:
+    needs: verify
+    if: needs.verify.outputs.is_authorized == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install cryptography
+        sudo apt-get update
+        sudo apt-get install -y fonts-wqy-zenhei fonts-noto-cjk
+    
+    - name: Download workflow artifact
+      if: github.event_name == 'workflow_run'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            run_id: context.payload.workflow_run.id,
+          });
+          const matchArtifact = artifacts.data.artifacts.find((artifact) => {
+            return artifact.name == "workflow-data"
+          });
+          if (matchArtifact) {
+            const download = await github.rest.actions.downloadArtifact({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              artifact_id: matchArtifact.id,
+              archive_format: 'zip',
+            });
+            const fs = require('fs');
+            fs.writeFileSync('${{github.workspace}}/workflow-data.zip', Buffer.from(download.data));
+          }
+    
+    - name: Set date
+      id: set-date
+      run: |
+        # 设置时区为北京时间
+        export TZ='Asia/Shanghai'
+        
+        # 获取当前日期作为默认值
+        DEFAULT_DATE=$(date +'%Y-%m-%d')
+        
+        # 如果是手动触发且指定了日期，则使用指定日期，否则使用当前日期
+        if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+          if [ "${{ github.event.inputs.date }}" != "" ]; then
+            PROCESS_DATE="${{ github.event.inputs.date }}"
+            echo "Using manually specified date: $PROCESS_DATE"
+          else
+            PROCESS_DATE="$DEFAULT_DATE"
+            echo "No date specified, using current date: $PROCESS_DATE"
+          fi
+        # 如果是工作流触发，尝试从前一个工作流获取日期
+        elif [ "${{ github.event_name }}" == "workflow_run" ]; then
+          if [ -f "workflow-data.zip" ]; then
+            unzip -o workflow-data.zip
+            if [ -f "date.txt" ] && [ -s "date.txt" ]; then
+              # 文件存在且不为空
+              PROCESS_DATE=$(cat date.txt | tr -d '[:space:]')
+              if [ ! -z "$PROCESS_DATE" ]; then
+                echo "Found valid date from previous workflow: $PROCESS_DATE"
+              else
+                PROCESS_DATE="$DEFAULT_DATE"
+                echo "Empty date in date.txt, using current date: $PROCESS_DATE"
+              fi
+            else
+              PROCESS_DATE="$DEFAULT_DATE"
+              echo "Invalid or empty date.txt, using current date: $PROCESS_DATE"
+            fi
+          else
+            PROCESS_DATE="$DEFAULT_DATE"
+            echo "No workflow-data.zip found, using current date: $PROCESS_DATE"
+          fi
+        # 定时任务或其他触发方式，使用当前日期
+        else
+          PROCESS_DATE="$DEFAULT_DATE"
+          echo "Using current date: $PROCESS_DATE"
+        fi
+        
+        # 验证日期格式
+        if [[ ! $PROCESS_DATE =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+          echo "Invalid date format: '$PROCESS_DATE'"
+          echo "Falling back to current date: $DEFAULT_DATE"
+          PROCESS_DATE="$DEFAULT_DATE"
+        fi
+        
+        # 输出日期供后续步骤使用
+        echo "date=$PROCESS_DATE" >> $GITHUB_OUTPUT
+        echo "Final processing date set to: $PROCESS_DATE"
+    
+    - name: Check for paper data
+      id: check_data
+      run: |
+        DATE="${{ steps.set-date.outputs.date }}"
+        echo "Processing date: $DATE"
+        FILE="Paper_metadata_download/${DATE}.json"
+        if [ -f "$FILE" ]; then
+          if [ -s "$FILE" ]; then
+            echo "Found paper data for ${DATE}"
+            # 检查文件内容是否为有效的JSON数组且包含数据
+            if PAPER_COUNT=$(python -c "import json; f=open('$FILE'); data=json.load(f); print(len(data)); f.close()"); then
+              if [ "$PAPER_COUNT" -gt 0 ]; then
+                echo "Found $PAPER_COUNT papers in data file"
+                echo "has_data=true" >> $GITHUB_OUTPUT
+                echo "file=${FILE}" >> $GITHUB_OUTPUT
+                echo "paper_count=$PAPER_COUNT" >> $GITHUB_OUTPUT
+              else
+                echo "No valid papers found in data file"
+                echo "has_data=false" >> $GITHUB_OUTPUT
+              fi
+            else
+              echo "Invalid JSON format in data file"
+              echo "has_data=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "Empty paper data file for ${DATE}"
+            echo "has_data=false" >> $GITHUB_OUTPUT
+          fi
+        else
+          echo "No paper data found for ${DATE}"
+          echo "has_data=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Process papers
+      if: steps.check_data.outputs.has_data == 'true'
+      env:
+        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
+        PROCESS_DATE: ${{ steps.set-date.outputs.date }}
+      run: |
+        echo "Starting paper processing for ${PROCESS_DATE}"
+        python Psy-day-paper-deepseek.py --date ${PROCESS_DATE}
+        echo "Paper processing completed"
+    
+    - name: Generate stats and newsletter
+      if: steps.check_data.outputs.has_data == 'true'
+      env:
+        GITHUB_REPOSITORY: ${{ github.repository }}
+        PROCESS_DATE: ${{ steps.set-date.outputs.date }}
+      run: |
+        echo "Generating statistics..."
+        python stats.py
+        echo "Generating newsletter..."
+        python newsletter.py --date ${PROCESS_DATE}
+        echo "Generation completed"
+    
+    - name: Generate TTS
+      if: steps.check_data.outputs.has_data == 'true'
+      env:
+        GITHUB_REPOSITORY: ${{ github.repository }}
+        PROCESS_DATE: ${{ steps.set-date.outputs.date }}
+      run: |
+        echo "Generating TTS..."
+        python tts.py --date ${PROCESS_DATE}
+        echo "TTS generation completed"
+    
+    - name: Commit and push if there are changes
+      if: steps.check_data.outputs.has_data == 'true'
+      env:
+        PROCESS_DATE: ${{ steps.set-date.outputs.date }}
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # 添加所有更改
+        git add -A
+        
+        # 检查是否有更改需要提交
+        if ! git diff --cached --quiet; then
+          # 有更改需要提交
+          echo "Changes detected, committing..."
+          git commit -m "Update daily paper report for ${PROCESS_DATE}"
+          
+          # 拉取最新更改并尝试推送
+          n=0
+          until [ $n -ge 3 ]
+          do
+            git pull --rebase origin main
+            if git push origin main; then
+              echo "Successfully pushed changes"
+              break
+            fi
+            n=$((n+1))
+            if [ $n -lt 3 ]; then
+              echo "Push failed, retrying in 5 seconds..."
+              sleep 5
+            fi
+          done
+        else
+          echo "No changes to commit"
+        fi

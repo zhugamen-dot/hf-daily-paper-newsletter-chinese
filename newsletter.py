@@ -112,7 +112,7 @@ class NewsletterGenerator:
             
         try:
             # 读取论文数据
-            json_file = os.path.join('HF-day-paper-deepseek', f"{date_str}_HF_deepseek_clean.json")
+            json_file = os.path.join('Psy-day-paper-deepseek', f"{date_str}_Psy_deepseek_clean.json")
             if not os.path.exists(json_file):
                 logger.error(f"未找到{date_str}的论文数据文件")
                 return False

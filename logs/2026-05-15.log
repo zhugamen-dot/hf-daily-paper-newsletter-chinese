@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2026-05-15 04:04:11,490 - INFO - 正在处理 2026-05-15 的论文数据
 2026-05-15 04:04:11,492 - INFO - 读取到 122 篇论文数据
 2026-05-15 04:04:11,493 - INFO - 正在处理第 1/122 篇论文
@@ -705,3 +706,13 @@
 2026-05-15 04:13:59,548 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2026-05-15 04:14:02,754 - INFO - 统计图表生成完成
 2026-05-15 04:14:02,783 - INFO - 日报已生成：newsletters/2026-05-15_daily_paper.md
+=======
+2026-05-15 16:26:39,156 - INFO - 正在获取 2026-05-15 的论文数据：PubMed（retmax=10000）+ Crossref
+2026-05-15 16:26:39,209 - WARNING - Retrying (Retry(total=9, connect=6, read=6, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))': /entrez/eutils/esearch.fcgi
+2026-05-15 16:26:41,644 - WARNING - Retrying (Retry(total=8, connect=6, read=6, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))': /entrez/eutils/esearch.fcgi
+2026-05-15 16:26:46,480 - WARNING - Retrying (Retry(total=7, connect=6, read=6, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))': /entrez/eutils/esearch.fcgi
+2026-05-15 16:26:56,114 - WARNING - Retrying (Retry(total=6, connect=6, read=6, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))': /entrez/eutils/esearch.fcgi
+2026-05-15 16:27:15,349 - WARNING - Retrying (Retry(total=5, connect=6, read=6, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))': /entrez/eutils/esearch.fcgi
+2026-05-15 16:27:53,776 - WARNING - Retrying (Retry(total=4, connect=6, read=6, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))': /entrez/eutils/esearch.fcgi
+2026-05-15 16:29:10,614 - WARNING - Retrying (Retry(total=3, connect=6, read=6, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))': /entrez/eutils/esearch.fcgi
+>>>>>>> fb0f878 (refactor: 全面清理 HF 命名，将项目架构与代码重构为 Psy 专属文献管线)

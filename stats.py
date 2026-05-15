@@ -64,7 +64,7 @@ def analyze_papers(start_date=None, end_date=None):
         date_str = current_date.strftime('%Y-%m-%d')
         # 如果是单日处理或者这一天的数据不存在于统计中，则处理
         if is_single_day or date_str not in stats['daily_counts']:
-            file_path = os.path.join('HF-day-paper-deepseek', f"{date_str}_HF_deepseek_clean.json")
+            file_path = os.path.join('Psy-day-paper-deepseek', f"{date_str}_Psy_deepseek_clean.json")
             
             if os.path.exists(file_path):
                 try:

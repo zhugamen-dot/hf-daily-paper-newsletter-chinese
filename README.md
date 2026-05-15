@@ -38,7 +38,7 @@ This bot automatically collects paper information from [🤗 Daily Papers](https
 ## 📁 Project Structure
 
 - `Paper_metadata_download.py`: Download paper metadata
-- `HF-day-paper-deepseek.py`: Main program for paper processing
+- `Psy-day-paper-deepseek.py`: Main program for paper processing
 - `newsletter.py`: Newsletter generation
 - `stats.py`: Statistical analysis and visualization
 - `tts.py`: Text-to-speech synthesis
@@ -46,7 +46,7 @@ This bot automatically collects paper information from [🤗 Daily Papers](https
 
 ### 📂 Directory Structure
 
-- `HF-day-paper-deepseek/`: Processed paper data and daily summaries
+- `Psy-day-paper-deepseek/`: Processed paper data and daily summaries
 - `Paper_metadata_download/`: Downloaded paper metadata
 - `newsletters/`: Generated newsletter files (Markdown & HTML)
 - `images/`: Newsletter images (keyword clouds, trend graphs, etc.)
