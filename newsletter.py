@@ -12,7 +12,7 @@ logger = get_logger()
 class NewsletterGenerator:
     def __init__(self):
         self.template = """
-# <img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.png" width="30"/> Hugging Face {{ date }} 论文日报
+# 学术论文日报 ({{ date }})
 
 ## 📊 今日论文统计
 - 总论文数：{{ total_papers }}
@@ -28,7 +28,9 @@ class NewsletterGenerator:
 **摘要：**
 {{ paper.summary }}
 
-**论文链接：** [HuggingFace]({{ paper.paper_url }}) | [arXiv]({{ paper.arxiv_url }})
+**关键词：** {{ paper.keywords }}
+
+**论文链接：** [{{ paper.source }}]({{ paper.paper_url }})
 
 {% if paper.code_url %}
 **代码链接：** [GitHub]({{ paper.code_url }})
@@ -52,30 +54,41 @@ class NewsletterGenerator:
 
     def extract_paper_info(self, paper_data):
         """从论文数据中提取关键信息"""
-        translation = paper_data.get('translation', '')
-        
-        # 使用更严格的正则表达式提取标题和摘要
+        translation = paper_data.get("translation", "") or ""
+
         title_match = re.search(r"标题[:：]\s*([^\n]+)(?=\s*\n\s*摘要[:：]|\Z)", translation, re.DOTALL)
-        summary_match = re.search(r"摘要[:：]\s*([^\n].+?)(?=\s*(?:\n\s*[^：\n]+[:：]|\Z))", translation, re.DOTALL)
-        
-        # 如果匹配失败，尝试使用备用模式
+        summary_match = re.search(
+            r"摘要[:：]\s*(.+?)(?=\s*(?:\n\s*关键词[:：]|\Z))",
+            translation,
+            re.DOTALL,
+        )
+
         if not title_match:
             title_match = re.search(r"^([^\n]+)\n\s*摘要[:：]", translation, re.MULTILINE)
-        
-        title = (title_match.group(1) if title_match else paper_data.get('title', '')).strip()
-        summary = (summary_match.group(1) if summary_match else '').strip()
-        
-        # 如果摘要为空，尝试获取剩余的所有文本作为摘要
-        if not summary and '摘要：' in translation:
-            summary = translation.split('摘要：', 1)[1].strip()
-        
+
+        title = (title_match.group(1) if title_match else paper_data.get("title", "")).strip()
+        summary = (summary_match.group(1) if summary_match else "").strip()
+
+        if not summary:
+            for sep in ("摘要：", "摘要:"):
+                if sep in translation:
+                    tail = translation.split(sep, 1)[1].strip()
+                    parts = re.split(r"(?:^|\n)\s*关键词\s*[:：]", tail, maxsplit=1)
+                    summary = parts[0].strip()
+                    break
+
+        keywords_match = re.search(r"关键词\s*[:：]\s*([^\n]+)", translation)
+        raw_kw = keywords_match.group(1).strip() if keywords_match else ""
+        keywords = raw_kw if raw_kw else "未提取"
+
         return {
-            'title': title,
-            'original_title': paper_data.get('title', ''),
-            'summary': summary,
-            'paper_url': paper_data.get('url', ''),
-            'arxiv_url': paper_data.get('arxiv_url', ''),
-            'code_url': paper_data.get('paper', {}).get('code', '')
+            "title": title,
+            "original_title": paper_data.get("title", ""),
+            "summary": summary,
+            "keywords": keywords,
+            "paper_url": paper_data.get("url", ""),
+            "source": paper_data.get("source", "未知来源"),
+            "code_url": paper_data.get("paper", {}).get("code", ""),
         }
 
     def get_hot_topics(self, papers):
@@ -173,7 +186,7 @@ class NewsletterGenerator:
 
 if __name__ == "__main__":
     # 解析命令行参数
-    parser = argparse.ArgumentParser(description='生成HuggingFace每日论文简报')
+    parser = argparse.ArgumentParser(description='生成 PubMed 每日论文简报')
     parser.add_argument('--date', type=str, help='指定要生成的日期 (YYYY-MM-DD格式)')
     args = parser.parse_args()
 

@@ -21,6 +21,67 @@ from newsletter import NewsletterGenerator
 # 设置日志记录器
 logger = setup_logger()
 
+
+def _extract_zh_title_summary(translation):
+    """
+    从 DeepSeek 返回的结构化文本中提取中文标题与摘要；
+    摘要在遇到换行后的「关键词：」时截断，避免把关键词拼进摘要。
+    """
+    translation = translation or ""
+    title_match = re.search(r"标题[:：]\s*([^\n]+)(?=\s*\n\s*摘要[:：]|\Z)", translation, re.DOTALL)
+    summary_match = re.search(
+        r"摘要[:：]\s*(.+?)(?=\s*(?:\n\s*关键词[:：]|\Z))",
+        translation,
+        re.DOTALL,
+    )
+    if not title_match:
+        title_match = re.search(r"^([^\n]+)\n\s*摘要[:：]", translation, re.MULTILINE)
+
+    title = (title_match.group(1) if title_match else "").strip() or "无标题"
+    summary = (summary_match.group(1) if summary_match else "").strip()
+
+    if not summary:
+        for sep in ("摘要：", "摘要:"):
+            if sep in translation:
+                tail = translation.split(sep, 1)[1].strip()
+                parts = re.split(r"(?:^|\n)\s*关键词\s*[:：]", tail, maxsplit=1)
+                summary = parts[0].strip()
+                break
+
+    if not summary:
+        summary = "无摘要"
+    return title, summary
+
+
+def _translation_marked_relevant(text):
+    """模型明确判定为相关（支持中英文冒号及少量空格）。"""
+    if not text or not str(text).strip():
+        return False
+    return bool(re.search(r"相关性\s*[:：]\s*是", str(text)))
+
+
+def _translation_marked_irrelevant(text):
+    """模型明确判定为不相关。"""
+    if not text or not str(text).strip():
+        return False
+    return bool(re.search(r"相关性\s*[:：]\s*否", str(text)))
+
+
+def _should_filter_by_relevance(translation):
+    """
+    按需求：出现「相关性：否」或整段回复中未明确出现「相关性：是」时，视为不相关并丢弃。
+    空回复视为不相关。
+    """
+    t = (translation or "").strip()
+    if not t:
+        return True
+    if _translation_marked_irrelevant(t):
+        return True
+    if not _translation_marked_relevant(t):
+        return True
+    return False
+
+
 @require_auth
 def init_api_client():
     """初始化并返回API客户端"""
@@ -131,24 +192,8 @@ def create_poster(results, date_str, output_folder):
     
     # 预计算每篇论文所需的高度
     for result in results:
-        # 提取中文标题和摘要
         translation = result.get("translation", "")
-        
-        # 使用更严格的正则表达式提取标题和摘要
-        title_match = re.search(r"标题[:：]\s*([^\n]+)(?=\s*\n\s*摘要[:：]|\Z)", translation, re.DOTALL)
-        summary_match = re.search(r"摘要[:：]\s*([^\n].+?)(?=\s*(?:\n\s*[^：\n]+[:：]|\Z))", translation, re.DOTALL)
-        
-        if not title_match:
-            title_match = re.search(r"^([^\n]+)\n\s*摘要[:：]", translation, re.MULTILINE)
-        
-        title = (title_match.group(1) if title_match else "无标题").strip()
-        summary = (summary_match.group(1) if summary_match else "").strip()
-        
-        if not summary and '摘要：' in translation:
-            summary = translation.split('摘要：', 1)[1].strip()
-        
-        if not summary:
-            summary = "无摘要"
+        title, summary = _extract_zh_title_summary(translation)
             
         # 计算标题行数
         title_lines = []
@@ -202,7 +247,7 @@ def create_poster(results, date_str, output_folder):
     draw.rectangle([0, 0, width, 240], fill=primary_color)  # 增加顶部装饰条高度
     
     # 绘制标题
-    title = f"Hugging Face {date_str} 论文日报"
+    title = f"PubMed {date_str} 论文日报"
     title_bbox = draw.textbbox((0, 0), title, font=title_font)
     title_width = title_bbox[2] - title_bbox[0]
     
@@ -225,23 +270,8 @@ def create_poster(results, date_str, output_folder):
     # 绘制内容
     y = 320  # 增加内容起始位置
     for i, result in enumerate(results):
-        # 提取中文标题和摘要
         translation = result.get("translation", "")
-        
-        title_match = re.search(r"标题[:：]\s*([^\n]+)(?=\s*\n\s*摘要[:：]|\Z)", translation, re.DOTALL)
-        summary_match = re.search(r"摘要[:：]\s*([^\n].+?)(?=\s*(?:\n\s*[^：\n]+[:：]|\Z))", translation, re.DOTALL)
-        
-        if not title_match:
-            title_match = re.search(r"^([^\n]+)\n\s*摘要[:：]", translation, re.MULTILINE)
-        
-        title = (title_match.group(1) if title_match else "无标题").strip()
-        summary = (summary_match.group(1) if summary_match else "").strip()
-        
-        if not summary and '摘要：' in translation:
-            summary = translation.split('摘要：', 1)[1].strip()
-        
-        if not summary:
-            summary = "无摘要"
+        title, summary = _extract_zh_title_summary(translation)
         
         # 创建论文卡片背景
         card_start_y = y
@@ -351,21 +381,32 @@ def process_papers(date_str=None):
         os.makedirs('newsletters', exist_ok=True)
         os.makedirs('audio', exist_ok=True)
         
-        # 检查是否存在中间结果文件
+        # 检查是否存在中间结果文件；另存「已被 AI 过滤」的标题，避免断点续跑时重复调用 API
         temp_file = os.path.join('HF-day-paper-deepseek', f"{date_str}_temp.json")
+        filtered_file = os.path.join('HF-day-paper-deepseek', f"{date_str}_filtered_titles.json")
         if os.path.exists(temp_file):
             try:
                 with open(temp_file, 'r', encoding='utf-8') as f:
                     results = json.load(f)
-                    processed_titles = {r['title'] for r in results}
                     logger.info(f"从中间文件恢复了 {len(results)} 篇已处理的论文")
             except Exception as e:
                 logger.warning(f"读取中间文件失败: {str(e)}")
                 results = []
-                processed_titles = set()
         else:
             results = []
-            processed_titles = set()
+
+        filtered_titles = set()
+        if os.path.exists(filtered_file):
+            try:
+                with open(filtered_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    if isinstance(data, list):
+                        filtered_titles = set(data)
+            except Exception as e:
+                logger.warning(f"读取过滤记录失败: {str(e)}")
+                filtered_titles = set()
+
+        processed_titles = {r['title'] for r in results} | filtered_titles
         
         success_count = len(results)
         error_count = 0
@@ -383,8 +424,11 @@ def process_papers(date_str=None):
                 title = paper_data.get('title', '')
                 summary = paper_data.get('summary', '')
                 paper_id = paper_data.get('id', '')
-                url = f"https://huggingface.co/papers/{paper_id}"
-                arxiv_url = f"https://arxiv.org/abs/{paper_id}" if paper_id else ""
+                source = paper_data.get('source', 'PubMed')
+                if source == 'Crossref':
+                    url = f"https://doi.org/{paper_id}" if paper_id else ""
+                else:
+                    url = f"https://pubmed.ncbi.nlm.nih.gov/{paper_id}/" if paper_id else ""
                 
                 # 检查是否已处理过
                 if title in processed_titles:
@@ -398,58 +442,91 @@ def process_papers(date_str=None):
                 
                 logger.info(f"正在处理第 {index}/{len(papers)} 篇论文")
                 
-                # 构建提示
-                prompt = f"""请将以下论文标题和摘要翻译成中文，保持学术性和专业性：
-                
-                标题：{title}
-                
-                摘要：{summary}
-                
-                请按照以下格式返回：
-                标题：[中文标题]
-                摘要：[中文摘要]"""
-                
-                # 调用API进行翻译，带有重试机制
+                # 构建提示（相关性预审 + 翻译与关键词）
+                prompt = f"""你是一个专业的学术评审专家。请阅读以下论文的标题和摘要。
+
+【核心筛选标准】
+我们需要寻找高度聚焦于以下领域的论文：
+1. 情绪/情感的心理学或神经科学研究（Emotion, Affect, 情绪感知/表达/体验等）
+2. 面部表情或语音表情（Facial/Vocal Expression）
+3. 社会认知、人际关系、印象形成或人格
+4. 人工智能（AI、机器学习、深度学习）在上述心理/情绪/认知领域的交叉应用。
+⚠️ 排除标准：如果是纯粹的临床躯体疾病（如糖尿病、骨折、肿瘤）、纯细胞生物学机制、或者AI仅用于无关的普通医学图像识别，请严格判定为不相关。
+
+标题：{title}
+摘要：{summary}
+
+【输出要求】
+请先判断相关性。如果根据标准判定为不相关，请仅回复四个字：“相关性：否”。
+如果判定为高度相关，请严格按照以下格式返回（必须保留相关性标签）：
+相关性：是
+标题：[中文标题]
+摘要：[中文摘要]
+关键词：[提取3-5个中文核心关键词]"""
+
                 max_retries = 3
                 retry_count = 0
+                translation = ""
                 while retry_count < max_retries:
                     try:
-                        logger.info(f"正在翻译第 {index} 篇论文 (尝试 {retry_count + 1}/{max_retries})")
+                        logger.info(f"正在评审/翻译第 {index} 篇论文 (尝试 {retry_count + 1}/{max_retries})")
                         response = call_deepseek_api(prompt)
-                        translation = response.choices[0].message.content
-                        
-                        # 验证翻译结果
-                        if translation and '标题：' in translation and '摘要：' in translation:
+                        translation = (response.choices[0].message.content or "").strip()
+                        if not translation:
+                            raise ValueError("模型返回空内容")
+
+                        # AI 智能过滤：不相关或未明确标「相关性：是」时结束重试，不抛错
+                        if _should_filter_by_relevance(translation):
+                            logger.info(f"第 {index} 篇论文被 DeepSeek 判定为不相关，已自动过滤。")
                             break
-                        else:
-                            raise ValueError("翻译结果格式不正确")
-                            
+
+                        if (
+                            _translation_marked_relevant(translation)
+                            and not _translation_marked_irrelevant(translation)
+                            and ("标题：" in translation or "标题:" in translation)
+                            and ("摘要：" in translation or "摘要:" in translation)
+                            and ("关键词：" in translation or "关键词:" in translation)
+                        ):
+                            break
+                        raise ValueError("翻译结果格式不正确")
+
                     except Exception as e:
                         retry_count += 1
                         if retry_count == max_retries:
                             raise
-                        logger.warning(f"第 {index} 篇论文翻译失败，将在 {2 ** retry_count} 秒后重试: {str(e)}")
+                        logger.warning(f"第 {index} 篇论文处理失败，将在 {2 ** retry_count} 秒后重试: {str(e)}")
                         time.sleep(2 ** retry_count)
-                
-                # 保存结果
-                result = {
-                    "title": title,
-                    "summary": summary,
-                    "translation": translation,
-                    "url": url,
-                    "arxiv_url": arxiv_url
-                }
-                results.append(result)
-                processed_titles.add(title)
-                success_count += 1
-                
-                # 保存中间结果
-                with open(temp_file, 'w', encoding='utf-8') as f:
-                    json.dump(results, f, ensure_ascii=False, indent=2)
-                
-                logger.info(f"第 {index} 篇论文处理成功")
-                
-                # 增加API调用间隔，避免限制
+
+                # 仅当明确「相关性：是」且非「否」时写入结果；过滤的不计成功/失败
+                if (
+                    _translation_marked_relevant(translation)
+                    and not _translation_marked_irrelevant(translation)
+                ):
+                    result = {
+                        "title": title,
+                        "summary": summary,
+                        "translation": translation,
+                        "url": url,
+                        "source": source,
+                    }
+                    results.append(result)
+                    processed_titles.add(title)
+                    success_count += 1
+
+                    with open(temp_file, 'w', encoding='utf-8') as f:
+                        json.dump(results, f, ensure_ascii=False, indent=2)
+
+                    logger.info(f"第 {index} 篇论文处理成功")
+                elif _should_filter_by_relevance(translation):
+                    filtered_titles.add(title)
+                    processed_titles.add(title)
+                    try:
+                        with open(filtered_file, 'w', encoding='utf-8') as ff:
+                            json.dump(sorted(filtered_titles), ff, ensure_ascii=False, indent=2)
+                    except Exception as exc:
+                        logger.warning(f"写入过滤记录失败: {exc}")
+                    logger.info(f"第 {index} 篇论文已过滤，未写入结果集")
+
                 time.sleep(3)
                 
             except Exception as e:
@@ -494,7 +571,7 @@ def process_papers(date_str=None):
 
 if __name__ == "__main__":
     # 解析命令行参数
-    parser = argparse.ArgumentParser(description='处理HuggingFace每日论文数据')
+    parser = argparse.ArgumentParser(description='处理 PubMed 每日论文数据（DeepSeek 翻译）')
     parser.add_argument('--date', type=str, help='指定要处理的日期 (YYYY-MM-DD格式)')
     args = parser.parse_args()
 
