@@ -1014,3 +1014,689 @@
 2026-05-15 09:44:25,705 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2026-05-15 09:44:28,832 - INFO - 统计图表生成完成
 2026-05-15 09:44:28,860 - INFO - 日报已生成：newsletters/2026-05-15_daily_paper.md
+2026-05-15 19:00:51,372 - INFO - 正在获取 2026-05-15 的论文数据：PubMed（retmax=10000）+ Crossref
+2026-05-15 19:00:52,574 - INFO - PubMed esearch 返回 PMID 数量: 137
+2026-05-15 19:01:05,753 - INFO - Crossref 返回条目数量: 21
+2026-05-15 19:01:05,753 - INFO - 合并后原始条目: PubMed 137 篇 + Crossref 21 篇 = 158 篇
+2026-05-15 19:01:05,754 - WARNING - 跳过论文 41807206: 缺少摘要
+2026-05-15 19:01:05,755 - INFO - 原始数据: 158篇
+2026-05-15 19:01:05,755 - INFO - 有效论文: 157篇
+2026-05-15 19:01:05,755 - INFO - 跳过论文: 1篇
+2026-05-15 19:01:05,755 - INFO - 跳过的论文详情:
+2026-05-15 19:01:05,756 - INFO -   ID: 41807206, 原因: 缺少摘要
+2026-05-15 19:01:05,765 - INFO - 成功保存 157 篇有效论文数据到文件
+2026-05-15 19:01:05,766 - INFO - 下载结果: {'status': 'success', 'date': '2026-05-15'}
+2026-05-15 19:01:24,911 - ERROR - API客户端初始化失败: 未设置 DEEPSEEK_API_KEY 环境变量。如果这是一个fork的仓库，请在仓库的Settings->Secrets->Actions中设置您自己的DEEPSEEK_API_KEY。
+2026-05-15 19:10:24,933 - ERROR - API客户端初始化失败: 未设置 DEEPSEEK_API_KEY 环境变量。如果这是一个fork的仓库，请在仓库的Settings->Secrets->Actions中设置您自己的DEEPSEEK_API_KEY。
+2026-05-15 19:11:40,242 - ERROR - API客户端初始化失败: 未设置 DEEPSEEK_API_KEY 环境变量。如果这是一个fork的仓库，请在仓库的Settings->Secrets->Actions中设置您自己的DEEPSEEK_API_KEY。
+2026-05-15 19:12:59,098 - INFO - 正在处理 2026-05-15 的论文数据
+2026-05-15 19:12:59,102 - INFO - 读取到 157 篇论文数据
+2026-05-15 19:12:59,103 - INFO - 正在处理第 1/157 篇论文
+2026-05-15 19:12:59,103 - INFO - 正在评审/翻译第 1 篇论文 (尝试 1/3)
+2026-05-15 19:12:59,103 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:00,196 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:00,197 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:00,197 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:04,199 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:04,502 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:04,502 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:04,503 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:08,504 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:08,810 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:08,810 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:08,811 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:08,812 - WARNING - 第 1 篇论文处理失败，将在 2 秒后重试: RetryError[<Future at 0x211a26ef6d0 state=finished raised AuthenticationError>]
+2026-05-15 19:13:10,813 - INFO - 正在评审/翻译第 1 篇论文 (尝试 2/3)
+2026-05-15 19:13:10,814 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:11,121 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:11,121 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:11,122 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:15,123 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:15,494 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:15,495 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:15,498 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:19,500 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:19,951 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:19,952 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:19,952 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:19,953 - WARNING - 第 1 篇论文处理失败，将在 4 秒后重试: RetryError[<Future at 0x211a26f2210 state=finished raised AuthenticationError>]
+2026-05-15 19:13:23,953 - INFO - 正在评审/翻译第 1 篇论文 (尝试 3/3)
+2026-05-15 19:13:23,953 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:24,273 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:24,273 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:24,274 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:28,275 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:33,998 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:33,998 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:33,999 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:38,001 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:38,485 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:38,485 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:38,486 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:38,486 - ERROR - 处理第 1 篇论文时发生错误: RetryError[<Future at 0x211a2703f90 state=finished raised AuthenticationError>]
+2026-05-15 19:13:38,486 - INFO - 正在处理第 2/157 篇论文
+2026-05-15 19:13:38,486 - INFO - 正在评审/翻译第 2 篇论文 (尝试 1/3)
+2026-05-15 19:13:38,487 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:38,960 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:38,960 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:38,960 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:42,962 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:43,434 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:43,435 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:43,436 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:47,437 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:47,914 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:47,914 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:47,915 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:47,915 - WARNING - 第 2 篇论文处理失败，将在 2 秒后重试: RetryError[<Future at 0x211a270ebd0 state=finished raised AuthenticationError>]
+2026-05-15 19:13:49,916 - INFO - 正在评审/翻译第 2 篇论文 (尝试 2/3)
+2026-05-15 19:13:49,916 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:50,394 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:50,395 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:50,396 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:54,397 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:54,877 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:54,877 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:54,880 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:58,882 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:13:59,390 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:13:59,392 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:13:59,393 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:13:59,395 - WARNING - 第 2 篇论文处理失败，将在 4 秒后重试: RetryError[<Future at 0x211a26f39d0 state=finished raised AuthenticationError>]
+2026-05-15 19:14:03,396 - INFO - 正在评审/翻译第 2 篇论文 (尝试 3/3)
+2026-05-15 19:14:03,396 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:03,881 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:03,882 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:03,885 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:07,888 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:08,375 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:08,375 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:08,377 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:12,378 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:12,857 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:12,857 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:12,858 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:12,859 - ERROR - 处理第 2 篇论文时发生错误: RetryError[<Future at 0x211a271bd10 state=finished raised AuthenticationError>]
+2026-05-15 19:14:12,859 - INFO - 正在处理第 3/157 篇论文
+2026-05-15 19:14:12,859 - INFO - 正在评审/翻译第 3 篇论文 (尝试 1/3)
+2026-05-15 19:14:12,859 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:13,506 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:13,506 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:13,508 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:17,510 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:17,991 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:17,991 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:17,992 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:21,993 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:22,477 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:22,477 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:22,478 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:22,478 - WARNING - 第 3 篇论文处理失败，将在 2 秒后重试: RetryError[<Future at 0x211a2723e10 state=finished raised AuthenticationError>]
+2026-05-15 19:14:24,480 - INFO - 正在评审/翻译第 3 篇论文 (尝试 2/3)
+2026-05-15 19:14:24,480 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:25,009 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:25,009 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:25,010 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:29,011 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:29,508 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:29,509 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:29,512 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:33,517 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:33,997 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:33,998 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:33,999 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:33,999 - WARNING - 第 3 篇论文处理失败，将在 4 秒后重试: RetryError[<Future at 0x211a2701f10 state=finished raised AuthenticationError>]
+2026-05-15 19:14:38,000 - INFO - 正在评审/翻译第 3 篇论文 (尝试 3/3)
+2026-05-15 19:14:38,000 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:38,510 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:38,510 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:38,512 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:42,513 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:43,018 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:43,018 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:43,019 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:47,021 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:47,500 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:47,501 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:47,502 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:47,502 - ERROR - 处理第 3 篇论文时发生错误: RetryError[<Future at 0x211a270d050 state=finished raised AuthenticationError>]
+2026-05-15 19:14:47,502 - INFO - 正在处理第 4/157 篇论文
+2026-05-15 19:14:47,503 - INFO - 正在评审/翻译第 4 篇论文 (尝试 1/3)
+2026-05-15 19:14:47,503 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:47,980 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:47,982 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:47,983 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:51,986 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:52,467 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:52,468 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:52,469 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:56,470 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:56,945 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:56,945 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:56,947 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:14:56,948 - WARNING - 第 4 篇论文处理失败，将在 2 秒后重试: RetryError[<Future at 0x211a2731b10 state=finished raised AuthenticationError>]
+2026-05-15 19:14:58,949 - INFO - 正在评审/翻译第 4 篇论文 (尝试 2/3)
+2026-05-15 19:14:58,949 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:14:59,426 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:14:59,426 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:14:59,427 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:15:03,428 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:03,920 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:15:03,921 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:15:03,921 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:15:07,922 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:08,402 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:15:08,403 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:15:08,403 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:15:08,404 - WARNING - 第 4 篇论文处理失败，将在 4 秒后重试: RetryError[<Future at 0x211a270ce50 state=finished raised AuthenticationError>]
+2026-05-15 19:15:12,404 - INFO - 正在评审/翻译第 4 篇论文 (尝试 3/3)
+2026-05-15 19:15:12,404 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:12,928 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:15:12,929 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:15:12,930 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:15:16,931 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:17,408 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:15:17,408 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:15:17,409 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:15:21,410 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:21,907 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:15:21,907 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:15:21,908 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:15:21,908 - ERROR - 处理第 4 篇论文时发生错误: RetryError[<Future at 0x211a2701c50 state=finished raised AuthenticationError>]
+2026-05-15 19:15:21,909 - INFO - 正在处理第 5/157 篇论文
+2026-05-15 19:15:21,909 - INFO - 正在评审/翻译第 5 篇论文 (尝试 1/3)
+2026-05-15 19:15:21,909 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:22,397 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:15:22,397 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:15:22,398 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:15:26,399 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:26,961 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:15:26,983 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:15:26,983 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:15:30,985 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:31,466 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:15:31,467 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:15:31,468 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:15:31,468 - WARNING - 第 5 篇论文处理失败，将在 2 秒后重试: RetryError[<Future at 0x211a2732210 state=finished raised AuthenticationError>]
+2026-05-15 19:15:33,469 - INFO - 正在评审/翻译第 5 篇论文 (尝试 2/3)
+2026-05-15 19:15:33,469 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:33,946 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-15 19:15:33,946 - ERROR - 如果您使用的是fork仓库，请确保已设置正确的DEEPSEEK_API_KEY
+2026-05-15 19:15:33,947 - ERROR - API 调用出错: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****872f is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-15 19:15:52,898 - INFO - 正在处理 2026-05-15 的论文数据
+2026-05-15 19:15:52,901 - INFO - 读取到 157 篇论文数据
+2026-05-15 19:15:52,902 - INFO - 正在处理第 1/157 篇论文
+2026-05-15 19:15:52,902 - INFO - 正在评审/翻译第 1 篇论文 (尝试 1/3)
+2026-05-15 19:15:52,902 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:54,255 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:15:55,037 - INFO - 第 1 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:15:55,038 - INFO - 第 1 篇论文已过滤，未写入结果集
+2026-05-15 19:15:58,039 - INFO - 正在处理第 2/157 篇论文
+2026-05-15 19:15:58,039 - INFO - 正在评审/翻译第 2 篇论文 (尝试 1/3)
+2026-05-15 19:15:58,039 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:15:58,351 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:15:59,382 - INFO - 第 2 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:15:59,384 - INFO - 第 2 篇论文已过滤，未写入结果集
+2026-05-15 19:16:02,386 - INFO - 正在处理第 3/157 篇论文
+2026-05-15 19:16:02,387 - INFO - 正在评审/翻译第 3 篇论文 (尝试 1/3)
+2026-05-15 19:16:02,389 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:16:02,693 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:16:03,427 - INFO - 第 3 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:16:03,429 - INFO - 第 3 篇论文已过滤，未写入结果集
+2026-05-15 19:16:06,431 - INFO - 正在处理第 4/157 篇论文
+2026-05-15 19:16:06,431 - INFO - 正在评审/翻译第 4 篇论文 (尝试 1/3)
+2026-05-15 19:16:06,432 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:16:06,734 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:16:07,805 - INFO - 第 4 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:16:07,806 - INFO - 第 4 篇论文已过滤，未写入结果集
+2026-05-15 19:16:10,808 - INFO - 正在处理第 5/157 篇论文
+2026-05-15 19:16:10,808 - INFO - 正在评审/翻译第 5 篇论文 (尝试 1/3)
+2026-05-15 19:16:10,809 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:16:11,113 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:16:16,225 - INFO - 第 5 篇论文处理成功
+2026-05-15 19:16:19,228 - INFO - 正在处理第 6/157 篇论文
+2026-05-15 19:16:19,228 - INFO - 正在评审/翻译第 6 篇论文 (尝试 1/3)
+2026-05-15 19:16:19,229 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:16:19,537 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:16:23,981 - INFO - 第 6 篇论文处理成功
+2026-05-15 19:16:26,983 - INFO - 正在处理第 7/157 篇论文
+2026-05-15 19:16:26,983 - INFO - 正在评审/翻译第 7 篇论文 (尝试 1/3)
+2026-05-15 19:16:26,984 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:16:27,342 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:16:30,752 - INFO - 第 7 篇论文处理成功
+2026-05-15 19:16:33,753 - INFO - 正在处理第 8/157 篇论文
+2026-05-15 19:16:33,753 - INFO - 正在评审/翻译第 8 篇论文 (尝试 1/3)
+2026-05-15 19:16:33,756 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:16:34,069 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:16:38,287 - INFO - 第 8 篇论文处理成功
+2026-05-15 19:16:41,289 - INFO - 正在处理第 9/157 篇论文
+2026-05-15 19:16:41,289 - INFO - 正在评审/翻译第 9 篇论文 (尝试 1/3)
+2026-05-15 19:16:41,290 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:16:41,640 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:16:45,599 - INFO - 第 9 篇论文处理成功
+2026-05-15 19:16:48,601 - INFO - 正在处理第 10/157 篇论文
+2026-05-15 19:16:48,601 - INFO - 正在评审/翻译第 10 篇论文 (尝试 1/3)
+2026-05-15 19:16:48,602 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:16:48,932 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:16:49,577 - INFO - 第 10 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:16:49,579 - INFO - 第 10 篇论文已过滤，未写入结果集
+2026-05-15 19:16:52,581 - INFO - 正在处理第 11/157 篇论文
+2026-05-15 19:16:52,581 - INFO - 正在评审/翻译第 11 篇论文 (尝试 1/3)
+2026-05-15 19:16:52,582 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:16:52,889 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:16:53,573 - INFO - 第 11 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:16:53,575 - INFO - 第 11 篇论文已过滤，未写入结果集
+2026-05-15 19:16:56,577 - INFO - 正在处理第 12/157 篇论文
+2026-05-15 19:16:56,577 - INFO - 正在评审/翻译第 12 篇论文 (尝试 1/3)
+2026-05-15 19:16:56,579 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:16:56,915 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:01,046 - INFO - 第 12 篇论文处理成功
+2026-05-15 19:17:04,047 - INFO - 正在处理第 13/157 篇论文
+2026-05-15 19:17:04,048 - INFO - 正在评审/翻译第 13 篇论文 (尝试 1/3)
+2026-05-15 19:17:04,051 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:04,369 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:09,367 - INFO - 第 13 篇论文处理成功
+2026-05-15 19:17:12,368 - INFO - 正在处理第 14/157 篇论文
+2026-05-15 19:17:12,368 - INFO - 正在评审/翻译第 14 篇论文 (尝试 1/3)
+2026-05-15 19:17:12,369 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:12,682 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:13,394 - INFO - 第 14 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:17:13,395 - INFO - 第 14 篇论文已过滤，未写入结果集
+2026-05-15 19:17:16,396 - INFO - 正在处理第 15/157 篇论文
+2026-05-15 19:17:16,396 - INFO - 正在评审/翻译第 15 篇论文 (尝试 1/3)
+2026-05-15 19:17:16,397 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:16,707 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:19,305 - INFO - 第 15 篇论文处理成功
+2026-05-15 19:17:22,306 - INFO - 正在处理第 16/157 篇论文
+2026-05-15 19:17:22,306 - INFO - 正在评审/翻译第 16 篇论文 (尝试 1/3)
+2026-05-15 19:17:22,307 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:22,628 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:23,833 - INFO - 第 16 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:17:23,835 - INFO - 第 16 篇论文已过滤，未写入结果集
+2026-05-15 19:17:26,836 - INFO - 正在处理第 17/157 篇论文
+2026-05-15 19:17:26,837 - INFO - 正在评审/翻译第 17 篇论文 (尝试 1/3)
+2026-05-15 19:17:26,840 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:27,165 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:27,871 - INFO - 第 17 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:17:27,874 - INFO - 第 17 篇论文已过滤，未写入结果集
+2026-05-15 19:17:30,876 - INFO - 正在处理第 18/157 篇论文
+2026-05-15 19:17:30,876 - INFO - 正在评审/翻译第 18 篇论文 (尝试 1/3)
+2026-05-15 19:17:30,877 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:31,194 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:31,935 - INFO - 第 18 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:17:31,936 - INFO - 第 18 篇论文已过滤，未写入结果集
+2026-05-15 19:17:34,938 - INFO - 正在处理第 19/157 篇论文
+2026-05-15 19:17:34,938 - INFO - 正在评审/翻译第 19 篇论文 (尝试 1/3)
+2026-05-15 19:17:34,941 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:35,265 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:35,865 - INFO - 第 19 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:17:35,866 - INFO - 第 19 篇论文已过滤，未写入结果集
+2026-05-15 19:17:38,868 - INFO - 第 20 篇论文已处理过，跳过
+2026-05-15 19:17:38,869 - INFO - 第 21 篇论文已处理过，跳过
+2026-05-15 19:17:38,872 - INFO - 正在处理第 22/157 篇论文
+2026-05-15 19:17:38,872 - INFO - 正在评审/翻译第 22 篇论文 (尝试 1/3)
+2026-05-15 19:17:38,873 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:39,179 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:41,983 - INFO - 第 22 篇论文处理成功
+2026-05-15 19:17:44,984 - INFO - 第 23 篇论文已处理过，跳过
+2026-05-15 19:17:44,984 - INFO - 第 24 篇论文已处理过，跳过
+2026-05-15 19:17:44,985 - INFO - 第 25 篇论文已处理过，跳过
+2026-05-15 19:17:44,985 - INFO - 正在处理第 26/157 篇论文
+2026-05-15 19:17:44,986 - INFO - 正在评审/翻译第 26 篇论文 (尝试 1/3)
+2026-05-15 19:17:44,987 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:45,312 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:46,189 - INFO - 第 26 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:17:46,190 - INFO - 第 26 篇论文已过滤，未写入结果集
+2026-05-15 19:17:49,191 - INFO - 第 27 篇论文已处理过，跳过
+2026-05-15 19:17:49,191 - INFO - 正在处理第 28/157 篇论文
+2026-05-15 19:17:49,192 - INFO - 正在评审/翻译第 28 篇论文 (尝试 1/3)
+2026-05-15 19:17:49,192 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:49,566 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:53,663 - INFO - 第 28 篇论文处理成功
+2026-05-15 19:17:56,664 - INFO - 正在处理第 29/157 篇论文
+2026-05-15 19:17:56,664 - INFO - 正在评审/翻译第 29 篇论文 (尝试 1/3)
+2026-05-15 19:17:56,667 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:17:56,980 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:17:57,967 - INFO - 第 29 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:17:57,968 - INFO - 第 29 篇论文已过滤，未写入结果集
+2026-05-15 19:18:00,969 - INFO - 第 30 篇论文已处理过，跳过
+2026-05-15 19:18:00,969 - INFO - 第 31 篇论文已处理过，跳过
+2026-05-15 19:18:00,970 - INFO - 正在处理第 32/157 篇论文
+2026-05-15 19:18:00,971 - INFO - 正在评审/翻译第 32 篇论文 (尝试 1/3)
+2026-05-15 19:18:00,971 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:18:01,288 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:18:02,245 - INFO - 第 32 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:18:02,247 - INFO - 第 32 篇论文已过滤，未写入结果集
+2026-05-15 19:18:05,249 - INFO - 第 33 篇论文已处理过，跳过
+2026-05-15 19:18:05,249 - INFO - 第 34 篇论文已处理过，跳过
+2026-05-15 19:18:05,250 - INFO - 正在处理第 35/157 篇论文
+2026-05-15 19:18:05,251 - INFO - 正在评审/翻译第 35 篇论文 (尝试 1/3)
+2026-05-15 19:18:05,252 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:18:05,556 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:18:09,897 - INFO - 第 35 篇论文处理成功
+2026-05-15 19:18:12,898 - INFO - 第 36 篇论文已处理过，跳过
+2026-05-15 19:18:12,898 - INFO - 正在处理第 37/157 篇论文
+2026-05-15 19:18:12,899 - INFO - 正在评审/翻译第 37 篇论文 (尝试 1/3)
+2026-05-15 19:18:12,899 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:18:13,228 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:18:17,885 - INFO - 第 37 篇论文处理成功
+2026-05-15 19:18:20,887 - INFO - 第 38 篇论文已处理过，跳过
+2026-05-15 19:18:20,887 - INFO - 第 39 篇论文已处理过，跳过
+2026-05-15 19:18:20,888 - INFO - 第 40 篇论文已处理过，跳过
+2026-05-15 19:18:20,888 - INFO - 第 41 篇论文已处理过，跳过
+2026-05-15 19:18:20,888 - INFO - 第 42 篇论文已处理过，跳过
+2026-05-15 19:18:20,889 - INFO - 第 43 篇论文已处理过，跳过
+2026-05-15 19:18:20,889 - INFO - 第 44 篇论文已处理过，跳过
+2026-05-15 19:18:20,889 - INFO - 第 45 篇论文已处理过，跳过
+2026-05-15 19:18:20,889 - INFO - 第 46 篇论文已处理过，跳过
+2026-05-15 19:18:20,890 - INFO - 第 47 篇论文已处理过，跳过
+2026-05-15 19:18:20,890 - INFO - 第 48 篇论文已处理过，跳过
+2026-05-15 19:18:20,890 - INFO - 第 49 篇论文已处理过，跳过
+2026-05-15 19:18:20,890 - INFO - 第 50 篇论文已处理过，跳过
+2026-05-15 19:18:20,890 - INFO - 第 51 篇论文已处理过，跳过
+2026-05-15 19:18:20,891 - INFO - 第 52 篇论文已处理过，跳过
+2026-05-15 19:18:20,892 - INFO - 第 53 篇论文已处理过，跳过
+2026-05-15 19:18:20,892 - INFO - 第 54 篇论文已处理过，跳过
+2026-05-15 19:18:20,892 - INFO - 第 55 篇论文已处理过，跳过
+2026-05-15 19:18:20,892 - INFO - 第 56 篇论文已处理过，跳过
+2026-05-15 19:18:20,892 - INFO - 第 57 篇论文已处理过，跳过
+2026-05-15 19:18:20,893 - INFO - 第 58 篇论文已处理过，跳过
+2026-05-15 19:18:20,893 - INFO - 第 59 篇论文已处理过，跳过
+2026-05-15 19:18:20,893 - INFO - 第 60 篇论文已处理过，跳过
+2026-05-15 19:18:20,893 - INFO - 第 61 篇论文已处理过，跳过
+2026-05-15 19:18:20,893 - INFO - 第 62 篇论文已处理过，跳过
+2026-05-15 19:18:20,894 - INFO - 第 63 篇论文已处理过，跳过
+2026-05-15 19:18:20,894 - INFO - 第 64 篇论文已处理过，跳过
+2026-05-15 19:18:20,894 - INFO - 第 65 篇论文已处理过，跳过
+2026-05-15 19:18:20,894 - INFO - 第 66 篇论文已处理过，跳过
+2026-05-15 19:18:20,894 - INFO - 正在处理第 67/157 篇论文
+2026-05-15 19:18:20,895 - INFO - 正在评审/翻译第 67 篇论文 (尝试 1/3)
+2026-05-15 19:18:20,895 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:18:21,200 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:18:25,376 - INFO - 第 67 篇论文处理成功
+2026-05-15 19:18:28,378 - INFO - 第 68 篇论文已处理过，跳过
+2026-05-15 19:18:28,378 - INFO - 第 69 篇论文已处理过，跳过
+2026-05-15 19:18:28,379 - INFO - 正在处理第 70/157 篇论文
+2026-05-15 19:18:28,379 - INFO - 正在评审/翻译第 70 篇论文 (尝试 1/3)
+2026-05-15 19:18:28,379 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:18:28,684 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:18:29,472 - INFO - 第 70 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:18:29,474 - INFO - 第 70 篇论文已过滤，未写入结果集
+2026-05-15 19:18:32,477 - INFO - 正在处理第 71/157 篇论文
+2026-05-15 19:18:32,477 - INFO - 正在评审/翻译第 71 篇论文 (尝试 1/3)
+2026-05-15 19:18:32,478 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:18:32,796 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:18:36,744 - INFO - 第 71 篇论文处理成功
+2026-05-15 19:18:39,746 - INFO - 第 72 篇论文已处理过，跳过
+2026-05-15 19:18:39,747 - INFO - 正在处理第 73/157 篇论文
+2026-05-15 19:18:39,749 - INFO - 正在评审/翻译第 73 篇论文 (尝试 1/3)
+2026-05-15 19:18:39,750 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:18:40,058 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:18:43,414 - INFO - 第 73 篇论文处理成功
+2026-05-15 19:18:46,415 - INFO - 第 74 篇论文已处理过，跳过
+2026-05-15 19:18:46,415 - INFO - 第 75 篇论文已处理过，跳过
+2026-05-15 19:18:46,416 - INFO - 正在处理第 76/157 篇论文
+2026-05-15 19:18:46,416 - INFO - 正在评审/翻译第 76 篇论文 (尝试 1/3)
+2026-05-15 19:18:46,416 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:18:46,774 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:18:51,136 - INFO - 第 76 篇论文处理成功
+2026-05-15 19:18:54,138 - INFO - 第 77 篇论文已处理过，跳过
+2026-05-15 19:18:54,138 - INFO - 第 78 篇论文已处理过，跳过
+2026-05-15 19:18:54,139 - INFO - 第 79 篇论文已处理过，跳过
+2026-05-15 19:18:54,141 - INFO - 正在处理第 80/157 篇论文
+2026-05-15 19:18:54,141 - INFO - 正在评审/翻译第 80 篇论文 (尝试 1/3)
+2026-05-15 19:18:54,141 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:18:54,452 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:18:58,523 - INFO - 第 80 篇论文处理成功
+2026-05-15 19:19:01,525 - INFO - 第 81 篇论文已处理过，跳过
+2026-05-15 19:19:01,526 - INFO - 正在处理第 82/157 篇论文
+2026-05-15 19:19:01,531 - INFO - 正在评审/翻译第 82 篇论文 (尝试 1/3)
+2026-05-15 19:19:01,532 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:19:01,845 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:19:06,416 - INFO - 第 82 篇论文处理成功
+2026-05-15 19:19:09,417 - INFO - 第 83 篇论文已处理过，跳过
+2026-05-15 19:19:09,417 - INFO - 正在处理第 84/157 篇论文
+2026-05-15 19:19:09,420 - INFO - 正在评审/翻译第 84 篇论文 (尝试 1/3)
+2026-05-15 19:19:09,421 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:19:09,745 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:19:13,424 - INFO - 第 84 篇论文处理成功
+2026-05-15 19:19:16,426 - INFO - 第 85 篇论文已处理过，跳过
+2026-05-15 19:19:16,426 - INFO - 第 86 篇论文已处理过，跳过
+2026-05-15 19:19:16,428 - INFO - 第 87 篇论文已处理过，跳过
+2026-05-15 19:19:16,429 - INFO - 正在处理第 88/157 篇论文
+2026-05-15 19:19:16,430 - INFO - 正在评审/翻译第 88 篇论文 (尝试 1/3)
+2026-05-15 19:19:16,431 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:19:16,762 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:19:20,919 - INFO - 第 88 篇论文处理成功
+2026-05-15 19:19:23,920 - INFO - 第 89 篇论文已处理过，跳过
+2026-05-15 19:19:23,921 - INFO - 第 90 篇论文已处理过，跳过
+2026-05-15 19:19:23,923 - INFO - 第 91 篇论文已处理过，跳过
+2026-05-15 19:19:23,925 - INFO - 第 92 篇论文已处理过，跳过
+2026-05-15 19:19:23,928 - INFO - 正在处理第 93/157 篇论文
+2026-05-15 19:19:23,928 - INFO - 正在评审/翻译第 93 篇论文 (尝试 1/3)
+2026-05-15 19:19:23,928 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:19:24,230 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:19:27,684 - INFO - 第 93 篇论文处理成功
+2026-05-15 19:19:30,686 - INFO - 第 94 篇论文已处理过，跳过
+2026-05-15 19:19:30,686 - INFO - 第 95 篇论文已处理过，跳过
+2026-05-15 19:19:30,687 - INFO - 正在处理第 96/157 篇论文
+2026-05-15 19:19:30,687 - INFO - 正在评审/翻译第 96 篇论文 (尝试 1/3)
+2026-05-15 19:19:30,687 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:19:31,121 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:19:36,441 - INFO - 第 96 篇论文处理成功
+2026-05-15 19:19:39,442 - INFO - 第 97 篇论文已处理过，跳过
+2026-05-15 19:19:39,442 - INFO - 正在处理第 98/157 篇论文
+2026-05-15 19:19:39,445 - INFO - 正在评审/翻译第 98 篇论文 (尝试 1/3)
+2026-05-15 19:19:39,446 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:19:39,979 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:19:44,172 - INFO - 第 98 篇论文处理成功
+2026-05-15 19:19:47,173 - INFO - 正在处理第 99/157 篇论文
+2026-05-15 19:19:47,173 - INFO - 正在评审/翻译第 99 篇论文 (尝试 1/3)
+2026-05-15 19:19:47,174 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:19:47,477 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:19:50,861 - INFO - 第 99 篇论文处理成功
+2026-05-15 19:19:53,862 - INFO - 第 100 篇论文已处理过，跳过
+2026-05-15 19:19:53,862 - INFO - 正在处理第 101/157 篇论文
+2026-05-15 19:19:53,865 - INFO - 正在评审/翻译第 101 篇论文 (尝试 1/3)
+2026-05-15 19:19:53,866 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:19:54,195 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:19:57,963 - INFO - 第 101 篇论文处理成功
+2026-05-15 19:20:00,964 - INFO - 第 102 篇论文已处理过，跳过
+2026-05-15 19:20:00,964 - INFO - 正在处理第 103/157 篇论文
+2026-05-15 19:20:00,965 - INFO - 正在评审/翻译第 103 篇论文 (尝试 1/3)
+2026-05-15 19:20:00,965 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:20:01,306 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:20:05,855 - INFO - 第 103 篇论文处理成功
+2026-05-15 19:20:08,857 - INFO - 第 104 篇论文已处理过，跳过
+2026-05-15 19:20:08,858 - INFO - 第 105 篇论文已处理过，跳过
+2026-05-15 19:20:08,860 - INFO - 正在处理第 106/157 篇论文
+2026-05-15 19:20:08,862 - INFO - 正在评审/翻译第 106 篇论文 (尝试 1/3)
+2026-05-15 19:20:08,863 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:20:09,165 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:20:09,569 - INFO - 第 106 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:20:09,571 - INFO - 第 106 篇论文已过滤，未写入结果集
+2026-05-15 19:20:12,573 - INFO - 第 107 篇论文已处理过，跳过
+2026-05-15 19:20:12,574 - INFO - 正在处理第 108/157 篇论文
+2026-05-15 19:20:12,576 - INFO - 正在评审/翻译第 108 篇论文 (尝试 1/3)
+2026-05-15 19:20:12,576 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:20:12,906 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:20:13,500 - INFO - 第 108 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:20:13,501 - INFO - 第 108 篇论文已过滤，未写入结果集
+2026-05-15 19:20:16,503 - INFO - 第 109 篇论文已处理过，跳过
+2026-05-15 19:20:16,503 - INFO - 第 110 篇论文已处理过，跳过
+2026-05-15 19:20:16,505 - INFO - 第 111 篇论文已处理过，跳过
+2026-05-15 19:20:16,505 - INFO - 正在处理第 112/157 篇论文
+2026-05-15 19:20:16,505 - INFO - 正在评审/翻译第 112 篇论文 (尝试 1/3)
+2026-05-15 19:20:16,506 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:20:16,807 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:20:17,535 - INFO - 第 112 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:20:17,538 - INFO - 第 112 篇论文已过滤，未写入结果集
+2026-05-15 19:20:20,541 - INFO - 第 113 篇论文已处理过，跳过
+2026-05-15 19:20:20,541 - INFO - 第 114 篇论文已处理过，跳过
+2026-05-15 19:20:20,542 - INFO - 正在处理第 115/157 篇论文
+2026-05-15 19:20:20,543 - INFO - 正在评审/翻译第 115 篇论文 (尝试 1/3)
+2026-05-15 19:20:20,545 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:20:20,852 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:20:25,370 - INFO - 第 115 篇论文处理成功
+2026-05-15 19:20:28,371 - INFO - 正在处理第 116/157 篇论文
+2026-05-15 19:20:28,371 - INFO - 正在评审/翻译第 116 篇论文 (尝试 1/3)
+2026-05-15 19:20:28,372 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:20:29,175 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:20:32,380 - INFO - 第 116 篇论文处理成功
+2026-05-15 19:20:35,381 - INFO - 正在处理第 117/157 篇论文
+2026-05-15 19:20:35,381 - INFO - 正在评审/翻译第 117 篇论文 (尝试 1/3)
+2026-05-15 19:20:35,382 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:20:35,697 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:20:39,470 - INFO - 第 117 篇论文处理成功
+2026-05-15 19:20:42,471 - INFO - 第 118 篇论文已处理过，跳过
+2026-05-15 19:20:42,472 - INFO - 第 119 篇论文已处理过，跳过
+2026-05-15 19:20:42,474 - INFO - 正在处理第 120/157 篇论文
+2026-05-15 19:20:42,476 - INFO - 正在评审/翻译第 120 篇论文 (尝试 1/3)
+2026-05-15 19:20:42,477 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:20:42,790 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:20:43,239 - INFO - 第 120 篇论文被 DeepSeek 判定为不相关，已自动过滤。
+2026-05-15 19:20:43,239 - INFO - 第 120 篇论文已过滤，未写入结果集
+2026-05-15 19:20:46,241 - INFO - 正在处理第 121/157 篇论文
+2026-05-15 19:20:46,241 - INFO - 正在评审/翻译第 121 篇论文 (尝试 1/3)
+2026-05-15 19:20:46,242 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:20:46,547 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:20:49,504 - INFO - 第 121 篇论文处理成功
+2026-05-15 19:20:52,505 - INFO - 第 122 篇论文已处理过，跳过
+2026-05-15 19:20:52,505 - INFO - 第 123 篇论文已处理过，跳过
+2026-05-15 19:20:52,506 - INFO - 正在处理第 124/157 篇论文
+2026-05-15 19:20:52,506 - INFO - 正在评审/翻译第 124 篇论文 (尝试 1/3)
+2026-05-15 19:20:52,506 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:20:52,817 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:20:56,996 - INFO - 第 124 篇论文处理成功
+2026-05-15 19:20:59,998 - INFO - 正在处理第 125/157 篇论文
+2026-05-15 19:20:59,998 - INFO - 正在评审/翻译第 125 篇论文 (尝试 1/3)
+2026-05-15 19:20:59,999 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:21:00,337 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:21:05,867 - INFO - 第 125 篇论文处理成功
+2026-05-15 19:21:08,869 - INFO - 第 126 篇论文已处理过，跳过
+2026-05-15 19:21:08,869 - INFO - 第 127 篇论文已处理过，跳过
+2026-05-15 19:21:08,870 - INFO - 正在处理第 128/157 篇论文
+2026-05-15 19:21:08,871 - INFO - 正在评审/翻译第 128 篇论文 (尝试 1/3)
+2026-05-15 19:21:08,871 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:21:09,192 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:21:12,912 - INFO - 第 128 篇论文处理成功
+2026-05-15 19:21:15,914 - INFO - 第 129 篇论文已处理过，跳过
+2026-05-15 19:21:15,914 - INFO - 第 130 篇论文已处理过，跳过
+2026-05-15 19:21:15,916 - INFO - 第 131 篇论文已处理过，跳过
+2026-05-15 19:21:15,917 - INFO - 正在处理第 132/157 篇论文
+2026-05-15 19:21:15,918 - INFO - 正在评审/翻译第 132 篇论文 (尝试 1/3)
+2026-05-15 19:21:15,918 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:21:16,236 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:21:19,840 - INFO - 第 132 篇论文处理成功
+2026-05-15 19:21:22,841 - INFO - 第 133 篇论文已处理过，跳过
+2026-05-15 19:21:22,841 - INFO - 第 134 篇论文已处理过，跳过
+2026-05-15 19:21:22,842 - INFO - 第 135 篇论文已处理过，跳过
+2026-05-15 19:21:22,843 - INFO - 第 136 篇论文已处理过，跳过
+2026-05-15 19:21:22,843 - INFO - 正在处理第 137/157 篇论文
+2026-05-15 19:21:22,844 - INFO - 正在评审/翻译第 137 篇论文 (尝试 1/3)
+2026-05-15 19:21:22,845 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:21:23,300 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:21:27,055 - INFO - 第 137 篇论文处理成功
+2026-05-15 19:21:30,056 - INFO - 正在处理第 138/157 篇论文
+2026-05-15 19:21:30,056 - INFO - 正在评审/翻译第 138 篇论文 (尝试 1/3)
+2026-05-15 19:21:30,057 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:21:30,370 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:21:33,579 - INFO - 第 138 篇论文处理成功
+2026-05-15 19:21:36,581 - INFO - 正在处理第 139/157 篇论文
+2026-05-15 19:21:36,581 - INFO - 正在评审/翻译第 139 篇论文 (尝试 1/3)
+2026-05-15 19:21:36,581 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:21:36,908 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:21:39,571 - INFO - 第 139 篇论文处理成功
+2026-05-15 19:21:42,573 - INFO - 正在处理第 140/157 篇论文
+2026-05-15 19:21:42,573 - INFO - 正在评审/翻译第 140 篇论文 (尝试 1/3)
+2026-05-15 19:21:42,575 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:21:42,882 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:21:46,788 - INFO - 第 140 篇论文处理成功
+2026-05-15 19:21:49,789 - INFO - 正在处理第 141/157 篇论文
+2026-05-15 19:21:49,790 - INFO - 正在评审/翻译第 141 篇论文 (尝试 1/3)
+2026-05-15 19:21:49,794 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:21:50,101 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:21:51,977 - INFO - 第 141 篇论文处理成功
+2026-05-15 19:21:54,979 - INFO - 正在处理第 142/157 篇论文
+2026-05-15 19:21:54,979 - INFO - 正在评审/翻译第 142 篇论文 (尝试 1/3)
+2026-05-15 19:21:54,980 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:21:55,288 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:21:58,280 - INFO - 第 142 篇论文处理成功
+2026-05-15 19:22:01,281 - INFO - 正在处理第 143/157 篇论文
+2026-05-15 19:22:01,281 - INFO - 正在评审/翻译第 143 篇论文 (尝试 1/3)
+2026-05-15 19:22:01,282 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:22:01,587 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:22:04,844 - INFO - 第 143 篇论文处理成功
+2026-05-15 19:22:07,846 - INFO - 正在处理第 144/157 篇论文
+2026-05-15 19:22:07,846 - INFO - 正在评审/翻译第 144 篇论文 (尝试 1/3)
+2026-05-15 19:22:07,847 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:22:08,307 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:22:11,243 - INFO - 第 144 篇论文处理成功
+2026-05-15 19:22:14,244 - INFO - 正在处理第 145/157 篇论文
+2026-05-15 19:22:14,244 - INFO - 正在评审/翻译第 145 篇论文 (尝试 1/3)
+2026-05-15 19:22:14,245 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:22:14,555 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:22:19,408 - INFO - 第 145 篇论文处理成功
+2026-05-15 19:22:22,409 - INFO - 正在处理第 146/157 篇论文
+2026-05-15 19:22:22,409 - INFO - 正在评审/翻译第 146 篇论文 (尝试 1/3)
+2026-05-15 19:22:22,410 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:22:22,715 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:22:25,210 - INFO - 第 146 篇论文处理成功
+2026-05-15 19:22:28,212 - INFO - 正在处理第 147/157 篇论文
+2026-05-15 19:22:28,212 - INFO - 正在评审/翻译第 147 篇论文 (尝试 1/3)
+2026-05-15 19:22:28,213 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:22:28,528 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:22:31,438 - INFO - 第 147 篇论文处理成功
+2026-05-15 19:22:34,439 - INFO - 正在处理第 148/157 篇论文
+2026-05-15 19:22:34,439 - INFO - 正在评审/翻译第 148 篇论文 (尝试 1/3)
+2026-05-15 19:22:34,440 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:22:34,755 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:22:39,024 - INFO - 第 148 篇论文处理成功
+2026-05-15 19:22:42,025 - INFO - 正在处理第 149/157 篇论文
+2026-05-15 19:22:42,025 - INFO - 正在评审/翻译第 149 篇论文 (尝试 1/3)
+2026-05-15 19:22:42,027 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:22:42,338 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:22:45,921 - INFO - 第 149 篇论文处理成功
+2026-05-15 19:22:48,922 - INFO - 正在处理第 150/157 篇论文
+2026-05-15 19:22:48,922 - INFO - 正在评审/翻译第 150 篇论文 (尝试 1/3)
+2026-05-15 19:22:48,923 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:22:49,222 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:22:52,277 - INFO - 第 150 篇论文处理成功
+2026-05-15 19:22:55,278 - INFO - 正在处理第 151/157 篇论文
+2026-05-15 19:22:55,278 - INFO - 正在评审/翻译第 151 篇论文 (尝试 1/3)
+2026-05-15 19:22:55,279 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:22:55,580 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:22:59,553 - INFO - 第 151 篇论文处理成功
+2026-05-15 19:23:02,554 - INFO - 正在处理第 152/157 篇论文
+2026-05-15 19:23:02,555 - INFO - 正在评审/翻译第 152 篇论文 (尝试 1/3)
+2026-05-15 19:23:02,558 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:23:02,869 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:23:06,040 - INFO - 第 152 篇论文处理成功
+2026-05-15 19:23:09,041 - INFO - 正在处理第 153/157 篇论文
+2026-05-15 19:23:09,041 - INFO - 正在评审/翻译第 153 篇论文 (尝试 1/3)
+2026-05-15 19:23:09,042 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:23:09,347 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:23:14,059 - INFO - 第 153 篇论文处理成功
+2026-05-15 19:23:17,061 - INFO - 正在处理第 154/157 篇论文
+2026-05-15 19:23:17,062 - INFO - 正在评审/翻译第 154 篇论文 (尝试 1/3)
+2026-05-15 19:23:17,066 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:23:17,382 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:23:20,778 - INFO - 第 154 篇论文处理成功
+2026-05-15 19:23:23,779 - INFO - 正在处理第 155/157 篇论文
+2026-05-15 19:23:23,779 - INFO - 正在评审/翻译第 155 篇论文 (尝试 1/3)
+2026-05-15 19:23:23,782 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:23:24,094 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:23:28,479 - INFO - 第 155 篇论文处理成功
+2026-05-15 19:23:31,480 - INFO - 正在处理第 156/157 篇论文
+2026-05-15 19:23:31,480 - INFO - 正在评审/翻译第 156 篇论文 (尝试 1/3)
+2026-05-15 19:23:31,482 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:23:31,804 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:23:35,956 - INFO - 第 156 篇论文处理成功
+2026-05-15 19:23:38,957 - INFO - 正在处理第 157/157 篇论文
+2026-05-15 19:23:38,958 - INFO - 正在评审/翻译第 157 篇论文 (尝试 1/3)
+2026-05-15 19:23:38,960 - INFO - 使用模型: DeepSeek Chat
+2026-05-15 19:23:39,275 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 19:23:42,414 - INFO - 第 157 篇论文处理成功
+2026-05-15 19:23:45,416 - INFO - 论文处理统计：总数 157，成功 55，失败 0
+2026-05-15 19:23:49,309 - INFO - 开始分析论文数据，时间范围：2026-05-08 至 2026-05-15
+2026-05-15 19:23:49,356 - INFO - 日报已生成：newsletters\2026-05-15_daily_paper.md

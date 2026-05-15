@@ -1,6 +1,653 @@
 [
   {
     "paper": {
+      "id": "42138058",
+      "title": "Delusional disorder and its differentiation from schizophrenia: A narrative review.",
+      "summary": "The nosological status and psychopathology of delusional disorder have been a subject of debate since Kraepelin distinguished it from schizophrenia and affective psychoses. Contemporary diagnostic manuals define delusional disorder primarily by the presence of delusions, offering limited guidance for its differentiation from schizophrenia. Notably, DSM-5 introduced a major, seemingly unexplained change by allowing bizarre delusions in delusional disorder, contrary to ICD-11, prior DSM editions, and classical descriptions. This narrative review revisits the seminal works of six classical authors (Kraepelin, Jaspers, Kretschmer, Sérieux and Capgras, and De Clérambault), who shaped the concept of delusional disorder (paranoia), and their detailed clinical cases of the disorder. All considered delusional disorder to be an independent psychotic disorder, characterized by chronic, systematized, nonbizarre delusions, preservation of personality, and minimal hallucinations, with a largely intact experiential framework outside of the delusional theme. Additional features such as delusional misinterpretations, illusions, and false memories were also emphasized in the classical literature. We examined these authors' clinical cases of delusional disorder for the presence of delusional features characteristic of schizophrenia (delusional mood, first-rank symptoms, autistic-solipsistic delusions, and double bookkeeping), which index alterations in the structure of experience rather than mere delusional content. Such delusions were rarely found in the classical clinical cases of delusional disorder. Our findings highlight psychopathological distinctions between delusional disorder and schizophrenia, suggesting that schizophrenia involves a qualitative alteration of the experiential framework that is absent in delusional disorder. These findings raise concerns about the validity of the DSM-5 change, allowing bizarre delusions in delusional disorder.",
+      "authors": [
+        {
+          "name": "Daniele Rossi Grauenfels"
+        },
+        {
+          "name": "Mads Gram Henriksen"
+        },
+        {
+          "name": "Julie Nordgaard"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42138048",
+      "title": "Cervical Cancer Screening Beliefs Questionnaire: Development and Psychometric Assessment With Immigrants in Australia.",
+      "summary": "BACKGROUND: A body of literature consistently highlights that women from minority cultures have been an underserved group in cervical screening.\nOBJECTIVE: We aimed to report the development and psychometric assessment of the Cervical Cancer Screening Beliefs Questionnaire (CCSBQ), a culturally sensitive questionnaire for measuring immigrant women's beliefs, knowledge, and attitudes towards cervical cancer and its screening.\nMETHODS: A convenience sample of 871 women, recruited from various ethnic organizations for this study, was split into 2 sets for development and validation of the CCSBQ. Items for the questionnaire were drawn from a literature review and a preliminary study conducted by the team. A panel of professional experts and lay women evaluated face and content validity. Multi-trait analysis and Cronbach's alpha were used to assess its factor structure, convergent-divergent validity, internal consistency and construct validity.\nRESULTS: A17-item, 3-subscale version of the CCSBQ was formed. Psychometric examination confirmed its 3-factor structure. All items showed a correlation coefficient ≥0.39 with its subscale score. Cronbach's alpha of the 3 subscales ranged from 0.71 to 0.88. Women, who had ever heard of cervical cancer and cervical screening, and screening participation, including ever attended, attended in the last 5 years as recommended and having intention to attend in the near future, had more proactive attitudes to health check-ups, better knowledge about cervical cancer and its screening, and perceived fewer barriers to cervical screening.\nCONCLUSION: The CCSBQ is culturally appropriate, valid and reliable for measuring immigrant women's attitudes, beliefs, and knowledge about cervical cancer and its screening practice.",
+      "authors": [
+        {
+          "name": "Cannas Kwok"
+        },
+        {
+          "name": "Gihane Endrawes"
+        },
+        {
+          "name": "Chun Fan Lee"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42138038",
+      "title": "Effectiveness of a one-year smoking cessation intervention for people with severe mental illness: results of the KISMET cluster-randomized controlled trial.",
+      "summary": "BACKGROUND: This study evaluated the effectiveness of a one-year smoking cessation intervention for people with severe mental illness compared with treatment as usual (TAU) in outpatient mental healthcare.\nMETHODS: The KISMET study is a pragmatic cluster-randomized controlled trial conducted in 21 outpatient mental healthcare teams in the Netherlands. Eleven teams delivered the KISMET intervention comprising cognitive-behavioral and peer support, combined with optional pharmacological reatment. Ten teams participated in the TAU condition. We collected data between October 2022 and July 2024. The primary outcome was self-reported smoking cessation at 12 months, verified through exhaled carbon monoxide levels below 10 parts per million. Secondary outcomes included depression and anxiety (HADS), severity of psychotic symptoms (PANSS-6), quality of life (SF-12), disease self-management (PAM-13), lipid profile, blood pressure, body mass index, glucose level, and physical fitness. Crude and adjusted linear and multivariable logistic regression and mixed model analyses were performed.\nRESULTS: Eighty-nine participants were included in the KISMET intervention and 44 in TAU. Smoking cessation rates were significantly higher in the KISMET group at 3 months (OR 12.1, 95% CI 1.4 to 103.7) and at 12 months (OR 4.2, 95% CI 1.0 to 17.2) but not at 6 months (OR 1.9, 95% CI 0.5 to 6.9). No significant differences between groups were found for secondary outcomes. Dropout rates were 58% in the intervention and 32% in the TAU group.\nCONCLUSIONS: The KISMET intervention shows potential without signs of physical or psychopathological complications. However, results must be interpreted with the high dropout rates in mind.",
+      "authors": [
+        {
+          "name": "Müge Küçükaksu"
+        },
+        {
+          "name": "Trynke Hoekstra"
+        },
+        {
+          "name": "Jentien M Vermeulen"
+        },
+        {
+          "name": "Lola Jansen"
+        },
+        {
+          "name": "Sanne Helmig"
+        },
+        {
+          "name": "Berno van Meijel"
+        },
+        {
+          "name": "Marcel C Adriaanse"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42138033",
+      "title": "The Longitudinal Early Growth and Development Study: Opportunities for Integration Across Cohorts with Parent-Offspring or Sibling Data.",
+      "summary": "The Early Growth and Development Study (EGDS) began in 2002 as a longitudinal prospective adoption study of birth parents, adoptive parents, and adopted children (n = 361 adoptees). It expanded in 2007 to include a second cohort of adoptees (n = 200), and a third cohort of siblings (siblings reared by the birth mother at age 7 [n = 217 siblings in 2013] and additional siblings in both birth and adoptive family homes [n = 881 siblings in 2016]). Data are available in a national repository within the Environmental influences on Child Health Outcomes (ECHO) study and have been integrated into analyses with national and international cohorts. Birth and adoptive families were originally enrolled through a systematic recruitment approach that began with efforts to partner with all domestic adoption agencies in specific regions of the United States following the birth of a child. Longitudinal assessments are ongoing and occurred in 9-month intervals until the adoptees turned 3 years of age, and in 1- to 2-year intervals thereafter to age 21. Data collection includes child temperament, cognition, behavior, and physical health; birth and adoptive parent personality, mental and physical health, context, parenting, and marital relations; the prenatal environment; genetic, hormonal, and cardiovascular data; and geocoding. A unique aspect of the adoption-sibling design is its ability to detect environmental influences on development and test complex interactions and correlations between genetic, prenatal, and postnatal environmental influences on a range of outcomes. The sample and procedures are described, followed by an overview of multicohort findings and opportunities for integration with other registries.",
+      "authors": [
+        {
+          "name": "Leslie D Leve"
+        },
+        {
+          "name": "Jenae M Neiderhiser"
+        },
+        {
+          "name": "Jody M Ganiban"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42138030",
+      "title": "The emotion dysregulation inventory - self-report: development and psychometric evaluation.",
+      "summary": "BACKGROUND: Emotion dysregulation is a transdiagnostic construct associated with multiple mental health conditions and shown to be an amenable target for treatment. The original Emotion Dysregulation Inventory (EDI) was created as a proxy-report measure validated in autistic and nonautistic youth. The goal of the current study was to develop a self-report version, the EDI-Self-Report (EDI-SR), that captures a first-person perspective and creates the option of multi-reporter measurement from adolescence through adulthood.\nMETHODS: Using methods developed by the Patient-Reported Outcomes Measurement Information System (PROMIS), potential items and response options were written and tested in cognitive interviews. Two samples (996 participants who are autistic or have other intellectual and developmental disabilities and 1,000 participants selected to be representative of the US census as a nonclinical comparison group) completed the initial item pool. Items were assessed using exploratory and confirmatory factor analyses, item response theory analyses, concurrent calibrations, convergent correlations with comparable legacy measures, internal consistency reliability, and test-retest reliability.\nRESULTS: Exploratory factor analyses suggested splitting Reactivity and Dysphoria items for confirmatory factor analyses and subsequent analyses. Following analyses, a 25-item Reactivity scale, a 7-item Dysphoria scale, and a 6-item Reactivity short-form scale were finalized. EDI-SR subscales showed convergent validity and superior total information when compared with similar measures, strong internal consistency reliability, and good test-retest reliability.\nCONCLUSIONS: The EDI-SR provides an efficient, precise measure of ED in autistic individuals, individuals with other intellectual and developmental disabilities, and a US census-matched representative sample, and allows for multi-reporter assessment in clinical and research contexts.",
+      "authors": [
+        {
+          "name": "Caitlin M Conner"
+        },
+        {
+          "name": "Lan Yu"
+        },
+        {
+          "name": "Katharine N Zeglen"
+        },
+        {
+          "name": "Paul A Pilkonis"
+        },
+        {
+          "name": "Carla A Mazefsky"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42138028",
+      "title": "Symptom severity, neighborhood crime, and neural correlates of reappraisal in patients with major depression and social anxiety.",
+      "summary": "BACKGROUND: Cognitive reappraisal deficits are a transdiagnostic risk factor for major depressive disorder (MDD) and social anxiety disorder (SAD) and are observed in patients with these disorders at the neural level. Preliminary research suggests less activation of prefrontal regions during reappraisal (vs. viewing) of negative stimuli associates with overall symptom severity in patients with MDD or SAD, however, this is not reliably observed across studies. Consistent with research showing that reappraisal may only be adaptive when employed to cope with uncontrollable adversity, this study sought to examine whether neighborhood-level adversity (i.e. socioeconomic disadvantage, crime) moderated the relation between internalizing symptom severity and neural correlates of reappraisal.\nMETHODS: This study included patients with a current diagnosis of MDD (n = 51) or SAD (n = 39). Patients completed measures of symptom severity as well as an emotion regulation task while in the scanner to assess neural activation during reappraisal. Patients' addresses were geocoded to assess neighborhood socioeconomic disadvantage and crime.\nRESULTS: Results indicated that greater symptom severity was associated with decreased activation of key prefrontal regions underlying reappraisal, but only for patients living in neighborhoods characterized by high levels of personal (i.e. violent) crime. Unexpectedly, the opposite was found for patients living in low-crime neighborhoods, such that greater symptom severity was associated with increased neural activation during reappraisal (vs. viewing) of negative stimuli.\nCONCLUSIONS: Findings highlight the critical importance of considering patients' neighborhood contexts when evaluating associations between symptom severity and neural correlates of reappraisal in patients with internalizing disorders.",
+      "authors": [
+        {
+          "name": "Cope Feurer"
+        },
+        {
+          "name": "Jagan Jimmy"
+        },
+        {
+          "name": "Melissa Uribe"
+        },
+        {
+          "name": "Katie L Burkhouse"
+        },
+        {
+          "name": "Stewart A Shankman"
+        },
+        {
+          "name": "K Luan Phan"
+        },
+        {
+          "name": "Olusola Ajilore"
+        },
+        {
+          "name": "Heide Klumpp"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42138024",
+      "title": "Longitudinal associations of sleep midpoint and sleep midpoint variability with the mental health of young adult college students.",
+      "summary": "Mental health continues to be a growing concern among young adult college students. Prior research has shown that later sleep midpoint and greater sleep midpoint variability were associated with worse mental health, but these studies primarily focused on adolescents and middle- to older-aged adults. The lack of exploration into sleep midpoint and mental health in young adults creates a unique gap in the literature. Therefore, the present study aimed to investigate the longitudinal associations between sleep midpoint and mental health among young adult college students. College students (N = 256) between the ages of 18-26 from two universities recorded their sleep patterns and mental health (PHQ-2, GAD-2, and PSS-4) using electronic daily diaries over 2 weeks. Linear mixed-effects modeling was used to identify how within- and between-person sleep midpoints were associated with mental health outcomes among college students. Between participants, later sleep midpoint was robustly associated with depression (B = 0.19, SE = 0.05, p < 0.001), anxiety (B = 0.21, SE = 0.06, p < 0.001), and stress (B = 0.33, SE = 0.13, p = 0.008). Greater sleep midpoint variability was correlated with worse depressive symptoms (r = 0.14, p = 0.03). Intervention studies need to determine whether addressing sleep timing and sleep regularity could improve young adult mental health.",
+      "authors": [
+        {
+          "name": "John Richmond T Sy"
+        },
+        {
+          "name": "Ruth K Brombach"
+        },
+        {
+          "name": "Jacqueline J Leete"
+        },
+        {
+          "name": "Kelly N Kim"
+        },
+        {
+          "name": "Daniel J Taylor"
+        },
+        {
+          "name": "Alisa Huskey"
+        },
+        {
+          "name": "Ethan A Olson"
+        },
+        {
+          "name": "Kiley Pauck"
+        },
+        {
+          "name": "Sarah E Emert"
+        },
+        {
+          "name": "Kenneth Bottrill"
+        },
+        {
+          "name": "Jessica R Dietch"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42138021",
+      "title": "Preferences for treatment and provider characteristics in outpatient psychotherapy: Results from a discrete choice experiment.",
+      "summary": "OBJECTIVE: Diagnosis rates of depression and demand for psychotherapy are increasing, posing significant challenges to the mental health care system. Availability of different treatments enables patients to express their preferences. Understanding these preferences can inform policy makers and clinicians and holds the potential to increase treatment adherence and improve clinical outcomes.\nMETHOD: A web survey was carried out among German adults (18-74) with psychotherapy experience, using quota sampling to reflect the gender distribution of psychotherapy-seeking adults. We conducted a discrete choice experiment to measure factors influencing the choice of psychotherapy. Included attributes were setting, delivery mode, waiting time, gender and professional experience of psychotherapist. Latent class analysis (LCA) was applied to identify preference patterns.\nRESULTS: Respondents (n = 1575, 70.5% female, Mage = 47) preferred individual, face-to-face, shorter waiting times, female and more experienced therapists. Setting was most influential, followed by professional experience, waiting time, delivery mode and gender. LCA revealed five distinct classes that showed varying valuations of the attributes and their relative importance.\nCONCLUSION: Results showed that respondents mainly homogeneously preferred specific treatment characteristics. These preferences should be considered when planning mental health services. Identification of distinct preference types suggests tailored provision of mental health care.",
+      "authors": [
+        {
+          "name": "Lara Lenz"
+        },
+        {
+          "name": "Hans-Helmut König"
+        },
+        {
+          "name": "André Hajek"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42138010",
+      "title": "Moderators and predictors of treatment outcome for OCD: A comparison of cognitive behavioral therapy Exposure Response Prevention to Acceptance and Commitment Therapy.",
+      "summary": "AIM: This study examined theory-driven predictors and moderators of treatment outcomes in group-based cognitive behavioral therapy with exposure and response prevention (CBT/ERP) and acceptance and commitment therapy (ACT) for obsessive-compulsive disorder (OCD).\nMETHOD: A total of 176 adults diagnosed with OCD according to DSM-5 criteria were randomized to either group-based CBT/ERP or ACT. Participants received 14 weekly sessions and were assessed using clinical interviews at baseline, post-treatment, and 6- and 12-month follow-ups.\nRESULTS: Anxiety sensitivity, experiential avoidance, and emotion regulation difficulties significantly moderated treatment response, with individuals high on these dimensions benefiting more from CBT/ERP than ACT.\nCONCLUSION: These findings were contrary to our hypotheses and underline the importance of investigating the active mechanisms of ACT. Additionally, group therapeutic alliance predicted and moderated treatment outcomes across both interventions.\nCLINICAL OR METHODOLOGICAL SIGNIFICANCE OF THIS ARTICLE: This study provides preliminary evidence that anxiety sensitivity, experiential avoidance, and emotion regulation difficulties significantly moderated treatment response, with individuals scoring higher on these dimensions deriving greater benefit from CBT/ERP compared with ACT. These findings were contrary to our hypotheses and underscore the need for further investigation into the mechanisms of action underlying ACT. In addition, group therapeutic alliance moderated outcomes across both interventions.",
+      "authors": [
+        {
+          "name": "Sara Kerstine Kaya Nielsen"
+        },
+        {
+          "name": "Anne Christine Stuart"
+        },
+        {
+          "name": "Mette Øllgaard Pedersen"
+        },
+        {
+          "name": "Clas Winding"
+        },
+        {
+          "name": "Nicole Rosenberg"
+        },
+        {
+          "name": "Ida Hageman"
+        },
+        {
+          "name": "Martin Balslev Jørgensen"
+        },
+        {
+          "name": "Signe Vangkilde"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42137975",
+      "title": "Factors associated with depression among people with cancer: Systematic umbrella review.",
+      "summary": "INTRODUCTION: Depression in cancer patients is a common condition that poses significant challenges for prognosis, treatment adherence, and quality of life. Its onset reflects the interplay of diverse biological, psychological, and social factors, which has been the focus of numerous studies.\nMETHODS: We identified both systematic and non-systematic reviews examining cross-sectional or prospective studies reporting associations between DAFs and depression. We extracted data relative to DAFs, as well as the direction and statistical significance of the reported association. Consistency of findings was assessed by estimating the proportion of concordant studies (PCS) for each DAF. Methodological quality and risk of bias were assessed using a standardized tool.\nRESULTS: We identified 73 reviews (26 systematic and/or meta-analyses, 47 narrative) encompassing 514 unique primary studies, reporting the associations between depression and 198 distinct DAFs. DAFs were grouped into six domains (sociodemographic, cancer-related, somatic, psychological, biological-genetic, and other). The strongest associations (PCS ≥ 75% and ≥5 studies) were observed for sociodemographic factors (e.g., high social support, being unmarried), inflammatory markers (IL-6, TNF-α, CRP), psychological factors (e.g., history of depression, distress, anxiety), and somatic factors (e.g., fatigue, low functional status, malnutrition). When restricting analyses to prospective studies, consistent associations emerged for cancer-related physical symptoms and time dedicated to patient communication.\nCONCLUSIONS: Depression in cancer is multifactorial, with physical and psychosocial factors likely iteracting dynamically. Prospective studies are still greatly needed. Further research on risk and protective factors may facilitate risk stratification, early diagnosis and patient management.",
+      "authors": [
+        {
+          "name": "Barbara Zaccagnino"
+        },
+        {
+          "name": "Arrigo Bettella"
+        },
+        {
+          "name": "Anna Francesca Olivetti"
+        },
+        {
+          "name": "Vittoria Cavalieri D'Oro"
+        },
+        {
+          "name": "Marco Cruciata"
+        },
+        {
+          "name": "Alfonso Tarricone"
+        },
+        {
+          "name": "Claudia Iorio"
+        },
+        {
+          "name": "Federica Sancassiani"
+        },
+        {
+          "name": "Goce Kalcev"
+        },
+        {
+          "name": "Michela Atzeni"
+        },
+        {
+          "name": "Veronica Vacca"
+        },
+        {
+          "name": "Alessandra Perra"
+        },
+        {
+          "name": "Mariarita Monni"
+        },
+        {
+          "name": "Angela Muscettola"
+        },
+        {
+          "name": "Maria Giulia Nanni"
+        },
+        {
+          "name": "Rosangela Caruso"
+        },
+        {
+          "name": "Luigi Grassi"
+        },
+        {
+          "name": "Martino Belvederi Murri"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42137966",
+      "title": "Prevalence of addictive use of cosmetic procedures and risk factors among Israeli women.",
+      "summary": "There is an increase in use of cosmetic procedures (CP) worldwide. Research suggests that people might develop addictive cosmetic procedures use (ACPU). We aimed to assess the prevalence of ACPU and explore associated risk factors. We collected cross-sectional data from a large sample of Jewish women in Israel aged 25-71 (N = 1614). We measured self-reported ACPU, personality measures (body- and self-esteem, attachment security), attitudes (feminism, anti-aging) and problematic social media use (PSMU). Among women who had CP (n = 710), 20% reported moderate-severe risk for ACPU during their lifetime and 15.4% in the past year. Multiple regression analyses indicated that higher ACPU was associated with lower body esteem and feminist attitudes and with higher PSMU. The association between body esteem and ACPU was primarily among women with higher PMSU. Findings indicate that ACPU is prevalent and emphasizes the importance of various risk factors, especially low body esteem and PSMU.",
+      "authors": [
+        {
+          "name": "Vera Skvirsky"
+        },
+        {
+          "name": "Uri Lifshin"
+        },
+        {
+          "name": "Dvora Shmulewitz"
+        },
+        {
+          "name": "Mario Mikulincer"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42137962",
+      "title": "Network Control Theory in Personalized Intervention Selection: A Proof-of-Concept Approach to Simulating Therapeutic Intervention Effects in Clinical Time-Series Data.",
+      "summary": "Network Control Theory (NCT) is concerned with the control of dynamic complex systems, allowing the modeling and assessing of (theoretical) intervention effects. This study presents a proof-of-concept approach for applying NCT in a process-oriented manner to ecological momentary assessment (EMA) data from patients. We applied a linear dynamic system model (LDS) using ridge regression to pretreatment time-series data of 20 patients with depression or anxiety (Δdata points/person = 96). Effects of 31 therapeutic interventions were simulated based on nomothetic knowledge and expert group consensus. Two NCT metrics were applied: average controllability (AC), indexing an intervention's theoretical effect over the system, and cumulative impulse response (CIR), indexing theoretical magnitude and direction of change per variable. Certain nodes exhibited elevated controllability. In exemplar cases, NCT-derived recommendations seemed to differ from the interventions actually received. Theoretical controllability varied across interventions, with some showing consistently higher controllability across patients. This proof-of-concept approach demonstrates how NCT can, in principle, be applied via process-oriented intervention simulations. However, its current application rests on idealized assumptions. Whether identified interventions are clinically meaningful needs empirical testing. We highlight opportunities for NCT research and discuss critical next steps toward empirically refining estimations of intervention effects.",
+      "authors": [
+        {
+          "name": "Lucie Pahlen"
+        },
+        {
+          "name": "Janik Fechtelpeter"
+        },
+        {
+          "name": "Bettina Hufschmidt"
+        },
+        {
+          "name": "Viktoria Kohl"
+        },
+        {
+          "name": "Mareike Ebert"
+        },
+        {
+          "name": "Hannah Fiehn"
+        },
+        {
+          "name": "Arwin Nemani"
+        },
+        {
+          "name": "Stefan G Hofmann"
+        },
+        {
+          "name": "Ulrich Stangier"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42136558",
+      "title": "Emotional Eating in Turkish Adults: Behavioral and Psychological Determinants with a Psychometric Evaluation of the Comprehensive Emotional Eating Scale.",
+      "summary": "This study evaluated the psychometric properties of the Turkish version of the Comprehensive Emotional Eating Scale (CEES) and examined its associations with emotion regulation, cognitive control, cognitive flexibility, and perceived stress in adults. A cross-sectional design was conducted with 1,521 adults aged 18-74 (68% female). The CEES was adapted following standard cross-cultural guidelines, including translation, back-translation, and approval by the original scale developer. Participants also completed the Emotional Appetite Questionnaire (EMAQ), Difficulties in Emotion Regulation Scale (DERS-16), Cognitive Control and Flexibility Questionnaire (CCFQ), and Perceived Stress Scale (PSS). Confirmatory factor analysis (CFA) assessed construct validity, while internal consistency, convergent validity, and multiple linear regression analyses explored predictors of emotional eating. CFA supported a four-factor structure representing Undereating-Positive Emotions, Undereating-Negative Emotions, Overeating-Positive Emotions, and Overeating-Negative Emotions, with item loadings of 0.48-0.77; one item was removed due to low loading. Internal consistency was high (α = .88-.91), and convergent validity was confirmed via EMAQ correlations. Multiple regression analyses indicated that greater difficulties in emotion regulation, higher perceived stress, lower cognitive control and flexibility, smoking, higher Body Mass Index (BMI), and chronic disease significantly increased emotional eating. Women showed higher undereating-negative emotion and total emotional eating scores, while smoking, higher BMI, and chronic disease elevated scores on specific subscales. The Turkish CEES demonstrates robust psychometric properties and reliably captures multidimensional emotional eating in adults. Psychological and demographic factors increase emotional eating subscales and total scores, supporting the scale's use in research and clinical settings in Türkiye.",
+      "authors": [
+        {
+          "name": "Banu Aslan"
+        },
+        {
+          "name": "Funda Tamer"
+        },
+        {
+          "name": "Özgür Önal"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42136534",
+      "title": "Motivational Interviewing Interventions for the Treatment of Suicidality in Adolescents: A Scoping Review.",
+      "summary": "OBJECTIVE: Adolescent suicidality warrants significant public health attention. Motivational Interviewing (MI) is a widely applied intervention with empirical support across health care settings. The current scoping review aims to summarize MI-based interventions for adolescent suicidality, including key findings, settings, types of interventionists, and use of fidelity monitoring.\nMETHODS: A literature search was conducted with four databases (PubMed, Web of Science, EMBASE, and PsycINFO) using the following search terms: motivational interviewing, motivational interview, motivational change, suicidality, self-harm, non-suicidal self-injury, youth, adolescent, child, and children.\nRESULTS: In total, 10 articles published between 2013 and 2021 were included. These studies included five settings and nine types of interventionists. All but one described fidelity monitoring of some kind including four that used the Motivational Interviewing Treatment Integrity code 3.1 (MITI). Four of the studies described reductions in adolescent suicidality variables, while others described improvements in a range of related outcomes, including depression symptoms, family support, self-efficacy, problem solving, use of safety planning, and attendance at follow-up mental health care visits.\nCONCLUSIONS: Results suggest that MI is a feasible and acceptable intervention for adolescents experiencing suicidality. Results also align with prior research in other clinical areas that MI is highly flexible in its application.",
+      "authors": [
+        {
+          "name": "Sebastian Gabriel Kaplan"
+        },
+        {
+          "name": "Elizabeth Grubb"
+        },
+        {
+          "name": "Dylan Ballard"
+        },
+        {
+          "name": "Elizabeth Mayfield Arnold"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42136375",
+      "title": "A deformable convolution and attention-driven multiscale transformer framework for robust and explainable speech emotion recognition.",
+      "summary": "Speech Emotion Recognition (SER) is a key contribution to Human-Computer interaction (HCI), mental health diagnosis, and affective computing. However, SER remains challenging due to challenges, including non-stationarity of speech signals and speaker variability. This research introduces a deformable convolution-enhanced hierarchical Swin Transformer network (DUST-Net) with token pruning and uncertainty-aware attention for robust SER. This integrates wavelet-based multiscale feature extraction, deformable convolutions, and adaptive token pruning to capture local and global emotional features efficiently. Signal preprocessing, Hiking Optimization Algorithm-based optimization, and DeepLIFT interpretability further improve performance and transparency. Experimental results achieved 98.75% accuracy, demonstrating robustness, generalizability, and efficiency in emotion recognition.",
+      "authors": [
+        {
+          "name": "Ati Jain"
+        },
+        {
+          "name": "Lalji Prasad"
+        },
+        {
+          "name": "Rashmi Yadav"
+        },
+        {
+          "name": "Deepak Kumar Yadav"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42136258",
+      "title": "Longitudinal Associations of Step Count on Mental Health and Sleep of Young Adult College Students.",
+      "summary": "OBJECTIVES: Step count is linked to better mental health and sleep outcomes for middle-aged and older adults, but less research has been done among young adults. The purpose of this study was to investigate how step count is associated with mental health and sleep outcomes in college students.\nMETHOD: College students (N = 217) from two universities wore a commercial activity tracker and completed daily diaries across 14 days. Linear mixed-effect modeling was used to test if step counts were associated with mental health (i.e. anxiety, depression, stress) and sleep outcomes (i.e. sleep duration, sleep efficiency, sleep onset latency, wake after sleep onset, sleep midpoint, sleep quality). Receiver operating characteristic (ROC) curves were used to identify the minimum step count connected with better outcomes.\nRESULTS: Greater average step count was associated with lower anxiety (B = -0.06, p < .01), depression (B = -0.07, p < .01), and stress (B = -0.14, p < .01), in addition to earlier sleep midpoint (B = -0.08, p < .01) and better sleep quality (B = -0.02, p < .01). ROC curve analyses yielded non-significant results, limiting step count recommendations for mental health and sleep.\nCONCLUSIONS: More steps, on average, were linked to less mental health symptoms, earlier sleep timing, and better sleep quality among college students. Future research needs to account for sedentariness, walking location and intensity.",
+      "authors": [
+        {
+          "name": "John Richmond T Sy"
+        },
+        {
+          "name": "Jacqueline J Leete"
+        },
+        {
+          "name": "Kelly N Kim"
+        },
+        {
+          "name": "Daniel J Taylor"
+        },
+        {
+          "name": "Ruth K Brombach"
+        },
+        {
+          "name": "Alisa Huskey"
+        },
+        {
+          "name": "Ethan A Olson"
+        },
+        {
+          "name": "Kiley Pauck"
+        },
+        {
+          "name": "Sarah E Emert"
+        },
+        {
+          "name": "Kenneth Bottrill"
+        },
+        {
+          "name": "Jessica R Dietch"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42136073",
+      "title": "The Impact of Online-Offline Integrated Out-of-hospital Education on Patients with Heart Failure: A Systematic Review and Meta-Analysis.",
+      "summary": "AIM: Poor post-discharge management worsens heart failure (HF) outcomes. Integrated online-offline education (O2O-IOPE) may improve clinical outcomes but remains unquantified. This systematic review and meta-analysis aims to evaluate the effects of O2O-IOPE on the health outcomes of patients with HF.\nMETHODS AND RESULTS: We searched PubMed, The Cochrane Library, Embase, Web of Science, CNKI, and Wanfang Data from database inception to April 18, 2025, for randomized controlled trials (RCTs) on O2O-IOPE in patients with HF. A total of 13 studies were ultimately included, involving 3,216 patients. Quantitative analyses showed that O2O-IOPE can reduce all-cause mortality (RR = 0.61, 95% CI = 0.46 to 0.81, P < 0.01), improve patients' left ventricular ejection fraction (LVEF) (MD = 0.66, 95% CI = 0.11 to 1.21, P = 0.02), quality of life (SMD = -0.82, 95% CI = -1.00 to -0.65, P < 0.01), and self-care ability (SMD = 1.81, 95% CI = 0.73 to 2.90, P < 0.01). However, non-significant effects were observed on rehospitalization rate (RR = 0.88, 95% CI = 0.49 to 1.57, P = 0.66), 6-minute walk test (6MWT) (MD = 69.84, 95% CI = -13.76 to 153.43, P = 0.10), or health-related knowledge (SMD = 3.09, 95% CI = -1.55 to 7.72, P = 0.19). Qualitative synthesis suggested potential benefits in NYHA class, medication adherence, depressive symptoms, and self-efficacy; however, because these findings were each derived from single studies, they should be considered preliminary and not conclusive.\nCONCLUSION: The O2O-IOPE framework significantly improves mortality, cardiac function, quality of life, and self-care in patients with HF. Its effectiveness appears to depend more on the quality of integration, particularly active response mechanisms and structured offline components, than on specific digital tools or delivery settings. Future research should focus on optimizing integration strategies and evaluating long-term outcomes across diverse populations.",
+      "authors": [
+        {
+          "name": "Zhaoying Zhu"
+        },
+        {
+          "name": "Ruonan Yang"
+        },
+        {
+          "name": "Shan Li"
+        },
+        {
+          "name": "Siying Ji"
+        },
+        {
+          "name": "Xinyue Shi"
+        },
+        {
+          "name": "Menghan Zhu"
+        },
+        {
+          "name": "Yangfan Nie"
+        },
+        {
+          "name": "Anan Li"
+        },
+        {
+          "name": "Yunying Hou"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42135240",
+      "title": "[The relationship between anxiety and vasovagal syncope in children and its impact on autonomic nervous function].",
+      "summary": "Objective: To explore the correlation between anxiety and the vasovagal syncope (VVS) in children and the impact of anxiety on the autonomic nervous function in pediatric VVS patients. Methods: A cross-sectional study was conducted. From January 2022 to October 2024, a total of 81 children diagnosed with VVS by head-up tilt test (HUTT) from the Department of Pediatric Cardiology, Capital Center for Children's Health, Capital Medical University were retrospectively enrolled. The VVS symptoms were quantified. The emotional state was evaluated using the screen for child anxiety related emotional disorders (SCARED). Autonomic nervous function was evaluated by the heart rate variability (HRV). According to the HUTT results, VVS children were categorized into vasoinhibitory type (VVS-VI), cardioinhibitory type (VVS-CI) and mixed type (VVS-M). The anxiety scores of VVS children were evaluated and the differences in anxiety scores among different subtypes were analyzed. According to the SCARED results, VVS children were divided into anxiety group and non-anxiety group. General characteristics, VVS symptoms scores, and HRV indicators were compared between the two groups. The comparison between groups was performed using independent sample t test, Mann-Whitney U test, Kruskal-Wallis H test, and chi-square test. Correlation analysis was completed using Spearman correlation analysis. Results: Among 81 VVS children, there were 31 males and 50 females, with the age of (11.6±2.0) years. The scores of somatization or panic, generalized anxiety disorder, separation anxiety disorder, social phobia, school phobia and the total score of anxiety in VVS children were 5.0 (2.0, 10.0), 5.0 (2.0, 9.0), 4.0 (2.0, 7.0), 5.0 (3.0, 8.0), 1.0 (0, 3.0) and 22.0 (13.0, 38.0). There were 40 cases of anxiety, accounting for 49% and 41 cases without anxiety, accounting for 51%. There was a significant difference in separation anxiety between VVS subgroups (P<0.05). Compared with the non-anxiety group, the anxiety group had a lower score of syncope symptom and a higher score of palpitation symptom (both P<0.05). Anxiety was positively correlated with palpitation score (r=0.25, P=0.011). Anxiety score was negatively correlated with syncope symptom score (r=-0.26, P=0.008), and positively correlated with chest tightness and palpitation symptom score (r=0.23, 0.26, both P<0.05). For HRV indices, the anxiety group showed significantly higher values in standard deviation of all normal-to-normal intervals, standard deviation of the average sequential 5 min normal-to-normal interval means and low-frequency power compared with the non-anxiety group (all P<0.05). Conclusions: The prevalence of anxiety in children with VVS is high and its manifestations are diverse. Those with VVS and comorbid anxiety have fewer syncope episodes but more palpitations. Children with VVS and comorbid anxiety exhibit an overall enhanced autonomic nerve tension, mainly sympathetic nerve activation.",
+      "authors": [
+        {
+          "name": "M J Song"
+        },
+        {
+          "name": "Y Lin"
+        },
+        {
+          "name": "H Jiang"
+        },
+        {
+          "name": "Y Q Li"
+        },
+        {
+          "name": "Y J Deng"
+        },
+        {
+          "name": "J Zhang"
+        },
+        {
+          "name": "L Shi"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "42134804",
+      "title": "Screening Programs for Type 1 Diabetes in Youth: Evidence for Clinical Practice.",
+      "summary": "Studies of individuals at risk for developing type 1 diabetes (T1D) have demonstrated that the disease is a continuum that progresses sequentially through distinct identifiable stages before the onset of symptoms. Screening for islet antibodies (IAbs) in at-risk children for T1D (first-degree relatives or those with human leukocyte antigen genetic risk) and in the general population is becoming increasingly common in some countries. The main aim of the T1D screening program is to reduce rates of diabetic ketoacidosis (DKA) at diagnosis and to participate in research protocols that receive T1D-modifying therapies to delay clinical onset. These advantages are generally balanced with the psychological symptoms (such as anxiety and depression) that this information could produce in healthy children-adolescents and their parents, and the costs of the screening. Optimal ages for performing IAb screening in the general population have been established by cohort analyses in several studies. Primary care physicians can be responsible for family enrollment and capillary blood sampling in the general population. For follow-up of individuals who screen positive for IAbs, both age and the number of IAbs detected influence how frequently and intensively monitoring is recommended, as well as whether referral to a specialist care center is advised. Measures considered for monitoring include IAbs, hemoglobin A1c, random blood glucose, oral glucose tolerance test (OGTT), and continuous glucose monitoring (CGM). This article describes how such evidence has been implemented in Italy, offering practical insights into integrating screening into routine pediatric care.",
+      "authors": [
+        {
+          "name": "Roberto Franceschi"
+        },
+        {
+          "name": "Enza Mozzillo"
+        },
+        {
+          "name": "Marco Marigliano"
+        },
+        {
+          "name": "Giulio Maltoni"
+        },
+        {
+          "name": "Ernesto Maddaloni"
+        },
+        {
+          "name": "Rocco Amendolara"
+        },
+        {
+          "name": "Luca Bernardini"
+        },
+        {
+          "name": "Riccardo Bonfanti"
+        },
+        {
+          "name": "Federica Ciambrelli"
+        },
+        {
+          "name": "Francesca Di Candia"
+        },
+        {
+          "name": "Ludovica Fedi"
+        },
+        {
+          "name": "Alessandro Fierro"
+        },
+        {
+          "name": "Dario Iafusco"
+        },
+        {
+          "name": "Antonio Iannilli"
+        },
+        {
+          "name": "Letizia Leonardi"
+        },
+        {
+          "name": "Claudio Maffeis"
+        },
+        {
+          "name": "Evelina Maines"
+        },
+        {
+          "name": "Riccardo Pertile"
+        },
+        {
+          "name": "Claudia Piona"
+        },
+        {
+          "name": "Ivana Rabbone"
+        },
+        {
+          "name": "Sara Santarelli"
+        },
+        {
+          "name": "Carlo Ripoli"
+        },
+        {
+          "name": "Andrea Scozzarella"
+        },
+        {
+          "name": "Valentina Tiberi"
+        },
+        {
+          "name": "Raffaella Buzzetti"
+        },
+        {
+          "name": "Valentino Cherubini"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
       "id": "42132264",
       "title": "Elderly escapers from cardiovascular complications and death despite high arterial stiffness: why are they protected?",
       "summary": "BACKGROUND: Individuals with high pulse wave velocity (PWV) may suffer from early vascular ageing (EVA) and face increased cardiovascular risk. Nonetheless, some individuals with EVA survive until old age, some even escaping cardiovascular complications entirely. The aim of this study was to explore characteristics of such individuals in population-based cohorts.\nMETHODS: We used data from the Metabolic syndrome and Artery REsearch (MARE) Consortium and a MARE sub-cohort; the Malmö Diet Cancer Study - Cardiovascular (MDCS-CV) arm for analyses, both covering cardiovascular risk factors, PWV, and carotid intima-media thickness (cIMT). EVA survivors (individuals 75+ years; PWV ≥ 90th percentile for age strata), were compared to age-matched and sex-matched controls (PWV 0 to 75th percentile). Additionally, in MDCS-CV, prospective EVA escapers [without major adverse cardiovascular events (MACE) or death during 10-year follow-up], were compared to EVA nonescapers.\nRESULTS: EVA Elderly survivors in the MARE Consortium had a higher risk factor burden, including cIMT levels, compared to controls. In MDCS-CV, similar patterns were found; however, cIMT did not differ between EVA Elderly survivors and controls, despite higher mean PWV (17 vs. 11 m/s). Finally, in MDCS-CV, EVA Elderly escapers (n = 34) compared to nonescapers (n = 56) had lower mean cIMT (0.92 vs. 1.01 mm; P = 0.009), despite comparable PWV (17 vs. 16 m/s). No other group differences were observed.\nCONCLUSION: EVA elderly survivors and escapers exist even among the very elderly. The latter are characterized by lower cIMT than EVA Elderly nonescapers. This could indicate discordant (differentiated) arterial ageing to be further explored.",
@@ -163,6 +810,26 @@
   },
   {
     "paper": {
+      "id": "42061982",
+      "title": "Improved thermal stability of Au-capped antireflective substrates with organic adhesion layers for real-time nanomaterial imaging.",
+      "summary": "Antireflective (AR) multilayer substrates have emerged as advanced platforms for surface-sensitive optical imaging. This study examines the thermal stability of AR substrates incorporating an ultrathin Au top layer, with a focus on the influence of the organic adhesion layer 3-mercaptopropyltrimethoxysilane (MPTMS). Au films (18 nm) deposited on MPTMS-modified SiO2demonstrated considerably improved morphological and thermal robustness compared with films formed using conventional Cr adhesion layers or without any adhesion layer. Prior to annealing, the Au films on MPTMS-based AR substrates consisted of compact assemblies of fine grains (∼20 nm). After annealing, the films recrystallized with an enhanced (111) orientation within the face-centered cubic structure, yielding continuous, groove-free surfaces. The reflectance spectrum of the AR substrates remained largely unchanged even after annealing at 250 °C. However, annealing above 300 °C led to the formation of ∼300 nm polygonal nanoholes in the Au films. The internal angles of these nanoholes were often close to 120° and 240°, reflecting the high crystallinity and threefold symmetry of the Au(111) plane. As a proof of concept, real-time optical microscopy was used to monitor the thermal reduction of ultrathin patterned AuOxlayers, highlighting the promise of MPTMS-based AR substrates for real-time imaging of thermally reactive nanomaterials in surface analysis, chemical sensing, and thin-film diagnostics.",
+      "authors": [
+        {
+          "name": "Yoshiaki Hattori"
+        },
+        {
+          "name": "Yih-Ren Chang"
+        },
+        {
+          "name": "Masatoshi Kitamura"
+        }
+      ],
+      "publishedAt": "2026-05-01",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
       "id": "42058908",
       "title": "Associations between socioeconomic factors and mental symptoms highlight whole-body correlates and pathways.",
       "summary": "Socioeconomic status (SES) correlates with both mental symptoms and systemic health traits, suggesting systemic health conditions as potential complementary pathways for SES-mental health associations alongside neural mechanisms. Here, we distinguished independent associations of areal and personal SES with 95 whole-body health traits, including anxiety and depression, tested whether these associations differ by age and sex, and assessed the extent to which associations between areal SES and mental health are statistically attributable to personal SES and whole-body health traits in 489,543 participants from the UK Biobank. We identified 144 independent associations of areal and personal SES with whole-body health traits, including 14 with significant age differences and 65 with significant sex differences. The associations between areal SES and mental symptoms were primarily mediated by personal SES and whole-body health traits. The pathways from areal SES to depression and anxiety symptoms may inform multiple-level interventions for mental health improvement.",
@@ -272,6 +939,26 @@
   },
   {
     "paper": {
+      "id": "42023934",
+      "title": "Degrade to Display: Coupling Checkpoint Degradation with Exogenous Antigen Presentation to Boost Antitumor Immunity.",
+      "summary": "Membrane and extracellular targeted protein degradation (meTPD) has emerged as a revolutionary therapeutic modality against cancer, enabling the lysosomal clearance of traditionally undruggable oncogenic targets. However, the therapeutic potential of the current meTPD method is frequently compromised by its reliance on loss-of-function elimination in the face of tumor immunosuppression and low immunogenicity. This In Focus article highlights the development of the intratumoral vaccination chimera (iVAC), a \"meTPD-Plus\" platform that advances beyond target elimination to actively reprogram tumor immunogenicity. By coupling the degradation of PD-L1 with the cross-presentation of exogenous antigens within tumors, iVAC chemically reprograms cancer cells into pseudo antigen-presenting cell entities (pseudo-APCs) capable of engaging bystander memory T cells. This dual-mechanism approach simultaneously relieves checkpoint-mediated immune suppression and enhances tumor antigen presentation, thereby redirecting viral-specific bystander T cells toward tumor recognition and establishing durable, systemic antitumor immunity.",
+      "authors": [
+        {
+          "name": "Yicong Ma"
+        },
+        {
+          "name": "Jianfei Jiang"
+        },
+        {
+          "name": "Yu Han"
+        }
+      ],
+      "publishedAt": "2026-04-23",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
       "id": "42016313",
       "title": "Optimizing solar energy planning: A spatial zoning method based on characterized dimensionless radiation profiles.",
       "summary": "Spatiotemporal distribution of solar energy resources is crucial for overall energy development; however, most studies face challenges in achieving reliability and high accuracy when completing solar radiation datasets across regions and also assume fixed climate zones, overlooking randomness from regional climatic inconsistencies. This study proposed a method for identifying dimensionless characterized solar radiation profiles to fill in missing solar radiation values. Benefiting from the characteristic attributes contained in the dimensionless profiles, prejudgment based on multiple sets of profiles can provide a visual window for validating climatic consistency. A case study on Kyushu shows that the proposed method achieves high accuracy on untrained data, with R2 values of 0.92-0.93 daily and 0.89-0.90 hourly. A spatiotemporal solar radiation map of Kyushu was developed, showing average annual radiation of 4616-5320 MJ m-2 yr-1, and a weather-stochasticity-driven zoning approach that divides the region into four zones.",
@@ -325,6 +1012,29 @@
         }
       ],
       "publishedAt": "2026-04-24",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "41990133",
+      "title": "Engineering Rapamycin-Induced Dimerization for Control of Gene Expression in Plants.",
+      "summary": "Plants possess sophisticated systems to regulate gene expression, which plant synthetic biology seeks to leverage to engineer new-to-nature functions. Chemical induction systems offer a valuable tool for such efforts by enabling precise temporal, spatial, and quantitative control of gene expression. However, existing plant chemical induction systems often face challenges, such as high basal activity in the absence of the inducer, unintended activation in uncontrolled environments, or off-target effects within the plant, caused either by the system itself or its inducer. Here, a rapamycin-inducible FKBP-FRB split transcription factor system was developed for use in plants. This system employs the human FRB (hFRB) domain (amino acids 2025 to 2115 of human mTOR) fused to a DNA-binding domain and the full-length human FKBP12 (hFKBP12) protein fused to a transcriptional activation domain. Upon application of rapamycin, hFRB and hFKBP12 dimerize, forming a functional transcription factor that binds to a synthetic promoter, thereby activating the target gene. The system was systematically optimized by extensive characterization of designs with different DNA-binding domains, FRB repeats, and promoter architectures. These efforts reduced basal activity and enhanced induced activity, resulting in an 87-fold increase in target gene expression from the uninduced to the induced state, and surpassing constitutive expression under the 2×CaMV35S promoter. Simple rapamycin application methods, such as spraying onto the leaf surface or soil application, combined with the system's sensitivity to nanomolar concentrations of inducer, further highlight its practicality. This system provides a robust and precise tool for regulating gene expression in plants and offers potential for expansion with orthogonal ligands targeting FRB or FKBP mutants.",
+      "authors": [
+        {
+          "name": "Dominic Schirmer"
+        },
+        {
+          "name": "Andrew C Reed"
+        },
+        {
+          "name": "Alexander C Pfotenhauer"
+        },
+        {
+          "name": "Scott C Lenaghan"
+        }
+      ],
+      "publishedAt": "2026-04-17",
       "source": "PubMed"
     }
   },
@@ -1512,6 +2222,47 @@
         }
       ],
       "publishedAt": "2026-03-16",
+      "source": "PubMed"
+    }
+  },
+  {
+    "paper": {
+      "id": "41671075",
+      "title": "Efficacy and Safety of Tunlametinib in Adults with Inoperable Neurofibromatosis Type 1-Associated Plexiform Neurofibromas: Phase IIa Trial and Biomarker Research.",
+      "summary": "PURPOSE: Plexiform neurofibromas (PN) present a significant clinical challenge, with a notable unmet need for effective and well-tolerated therapies, particularly for the adult population.\nPATIENTS AND METHODS: A single-arm, open-label, phase IIa trial of tunlametinib was conducted to assess its efficacy and safety in adults with inoperable, radiologically measurable PN. Patients received tunlametinib at a dose of 9 mg twice daily, following a continuous 21-day cycle regimen. The primary endpoint was the confirmed objective response rate (ORR), and secondary endpoints included disease control rate, duration of response, progression-free survival, and improvements in patient-reported outcomes (PRO) compared with baseline. Exploratory analyses integrating clinical variables and single-cell transcriptomic profiles were performed to explore response heterogeneity.\nRESULTS: Of 15 adults (10 males and five females; median age, 27 years; range, 18-45), eight patients achieved a confirmed partial response, with an ORR of 53.3% (95% confidence interval, 26.69-78.73) and a median neurofibroma volume reduction of -23.5% (range, 1.6% to -49.1%). Significant improvements in multiple PRO domains were observed, including Patients' Global Impression of Change and the Plexiform Neurofibromas Quality of Life scale. Regarding safety, all patients experienced at least one treatment-related adverse event, the majority of which were grade 1 or 2. Single-cell RNA sequencing profiling of pretreatment biopsies from one rapid responder and two gradual responders revealed substantial microenvironmental heterogeneity.\nCONCLUSIONS: Tunlametinib demonstrated promising efficacy and an acceptable safety profile in adults with PN, broadly aligning with the prior PN trials, including selumetinib and mirdametinib.",
+      "authors": [
+        {
+          "name": "Zhichao Wang"
+        },
+        {
+          "name": "Jingxuan Huang"
+        },
+        {
+          "name": "Jun Liu"
+        },
+        {
+          "name": "Yuehua Li"
+        },
+        {
+          "name": "Chengjiang Wei"
+        },
+        {
+          "name": "Yihui Gu"
+        },
+        {
+          "name": "Ying Cheng"
+        },
+        {
+          "name": "Yanjun Xu"
+        },
+        {
+          "name": "Hongqi Tian"
+        },
+        {
+          "name": "Qingfeng Li"
+        }
+      ],
+      "publishedAt": "2026-02-11",
       "source": "PubMed"
     }
   },
@@ -3716,6 +4467,89 @@
   },
   {
     "paper": {
+      "id": "10.31234/osf.io/f75cv_v5",
+      "title": "Expression ambiguity leads to greater influence of predictive context during face emotion perception",
+      "summary": "Context has been theoretically proposed to exert greater impact on face emotion processing when expressions are ambiguous. However, evidence for such ‘context-weighting’ as a function of expression ambiguity is very limited. We investigated the presence of context-weighting using emotive sentence cues that provided a predictive context for a neutral face that changed expression in response. Emotional expressions were either congruent or incongruent with the sentence cue. To modulate expression ambiguity we manipulated expression intensity: low (80%-intensity) and high (20%-intensity) ambiguity in Experiments 1a/b using angry and happy faces, with medium ambiguity (50%-intensity) added in Experiment 2 using disgust and sad faces. Participants categorised the face emotion. Error rates were lower when face expressions were congruent vs. incongruent with the predictive context. Crucially, congruency effects were larger when expressions were more ambiguous (Expts 1b and 2 especially), thus indicating greater context-weighting. Drift Diffusion Modelling revealed that this effect was underpinned by use of predictive context to improve the efficiency of face expression evidence accumulation. Our findings provide the first empirical evidence that emotion perception is based on flexible integration of both face and prior context within a predictive processing framework, with the degree of context-weighting determined by the level of expression ambiguity.",
+      "authors": [
+        {
+          "name": "Vilma Pullinen"
+        },
+        {
+          "name": "Louise H Phillips"
+        },
+        {
+          "name": "Patric Bach"
+        },
+        {
+          "name": "Marius Golubickis"
+        },
+        {
+          "name": "Aimee Newlands"
+        },
+        {
+          "name": "Margaret Cecilia Jackson"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
+      "id": "10.31234/osf.io/u7erj_v1",
+      "title": "Emotional women? Testing gender effects on emotion expression and recognition with genuine and dynamic emotion expressions",
+      "summary": "Past research has suggested women are more emotionally expressive and perceptive, and this is typically endorsed as a belief shared by the public (Briton &amp; Hall, 1995; Plant et al., 2000; Timmers et al., 2003). However, there is a growing literature of mixed results finding generally small effects of gender on expression and perception. Little research has used genuine expressions and perceptions to assess whether expression or perception of emotion in daily life differs by gender. In this study, we collected multiple emotional expressions and the corresponding self-reports of emotion experience. Expressions were collected from 128 participants (94 female; 34 male). Another 824 participants (494 female, 313 male, 17 other) reported what emotion they perceived in those expressions. This resulted in 3775 emotion perceptions from 772 expressions. No difference across genders was found for either emotion expression or emotion perception. This research aligns with broader research identifying that the effect of gender on emotion expression and perception is dependent on context and social expectations, and typically small when identified. With extended naturalistic expressions, any possible gender differences could not be detected.",
+      "authors": [
+        {
+          "name": "Tamara Van Der Zant"
+        },
+        {
+          "name": "Eric John Vanman"
+        },
+        {
+          "name": "Nicole L. Nelson"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
+      "id": "10.1111/spc3.12003",
+      "title": "Emotion Regulation: The Interplay of Culture and Genes",
+      "summary": "Abstract\n                  \n                    Given the mounting empirical evidence to support both the cultural and biological shaping of emotional processes, there is a clear need to integrate these determinants of emotional processes. Much in the same vein as these efforts, in our research on gene‐culture interactions, we have examined how cultural and biological factors jointly influence emotion regulation. The present paper specifically aims to present research considering both cultural and genetic factors as two interacting influences that shape emotion regulation. A series of studies conducted to test the gene‐culture interaction involving OXTR\n                    rs\n                    53576 consistently show that individuals with the variant that is associated with socio‐emotional sensitivity tend to utilize culturally normative forms of emotion regulation more than those without it. These findings underscore the importance of considering the interplay between socio‐cultural and genetic factors that shape social behaviors.",
+      "authors": [
+        {
+          "name": "Heejung S. Kim"
+        },
+        {
+          "name": "Joni Y. Sasaki"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
+      "id": "10.31234/osf.io/pja9d_v1",
+      "title": "The Therapist as a Privileged Environment: How the Relational Body of the Clinician Shapes Perception, Arousal, Attention, Emotion, and Cognition in Children with Autism Spectrum Disorder",
+      "summary": "Conventional models of autism intervention tend to conceptualize the therapist as an external agentwho selectively reinforces, models, or teaches behaviors in a child with Autism Spectrum Disorder(ASD). Drawing on theoretic and experimental research, this work argues that relocating thetherapist within the interpersonal system rather than above it or outside it is not only theoreticallysound but clinically consequential. Crucially, we extend existing formulations by proposing that thetherapist’s regulatory function is not defined solely by maintaining a stable and internally coherentautonomic state. Experimental evidence and clinical work suggest that regulation in autism therapyis shaped by the therapist’s capacity for flexible, moment-to-moment modulation of embodiedsignals — including posture, facial expressiveness, vocal prosody, movement tempo, and evenrespiratory rhythm — in response to the child’s changing affective and autonomic states. This articleproposes a model in which the therapist is not merely a provider of techniques or a neutral deliverysystem, but constitutes a privileged environment for the child in the sense of a dynamic, sensory,relational, and regulatory context whose moment-to-moment properties actively shape how the childperceives, becomes aroused, directs attention, regulates emotion, and constructs cognition.",
+      "authors": [
+        {
+          "name": "Maria Teresa Sindelar"
+        },
+        {
+          "name": "Bruno Sales"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
       "id": "10.1207/s15327957pspr0301_1",
       "title": "The Intensity of Emotion",
       "summary": "A theory is outlined that assumes that emotions are motivational states with the special function of producing adaptation to situational conditions. The theory assumes that the emotional system lies in the central nervous system, that it is fast to react, able to change quickly from one emotional state to another, produces only one emotion at a time, and that the intensity of that emotion is a nonmonotonic function of deterrence to the aim of the emotion. Supporting data from several experimental tests are reported, and selected theoretical problems are discussed.",
@@ -3796,6 +4630,56 @@
   },
   {
     "paper": {
+      "id": "10.31234/osf.io/7vb32_v1",
+      "title": "Ketamine and facial emotion recognition in treatment-resistant depression: a computational account",
+      "summary": "Background: Facial emotion recognition deficits are well defined in depression but understudied in treatment-resistant depression (TRD). Over the past decades, subanesthetic doses of ketamine have emerged as an effective treatment for TRD, but its effect on affective processing is still little known. Approaches from computational psychiatry, such as sequential evidence sampling models of decision making, can provide useful insight into the underlying cognitive processes of facial emotion recognition in TRD patients before and after ketamine antidepressant treatment.Aim: Provide a computational account of facial emotion recognition in TRD and the effects of ketamine treatment using hierarchical drift diffusion modeling (HDDM).Method: In this observational case-control study, 24 TRD patients and 35 healthy controls completed a FER task. TRD patients were assessed before, 2-4 hours after the initial racemic ketamine infusion, and at one week of treatment. Healthy controls were assessed at similar intervals, without intervention, to assess baseline differences and potential learning effects related to task repetition. Accuracy and reaction times were analyzed and fit with an HDDM to formalize correct facial emotion recognition as a noisy evidence-accumulation process. Parameters of the best-fitting model were compared across groups and timepoints.Results: Before treatment, TRD patients were slower but as accurate as controls. Following ketamine, the patients were significantly faster than at baseline and compared with repeated testing in healthy controls. These effects were underpinned by longer nondecision times and wider decision boundaries in patients at baseline, both of which decreased after starting ketamine. There was no behavioral or computational evidence of a negative bias in patients.Conclusions: Results suggest that processes related to psychomotor slowing and response caution, rather than affective processing, underlie deficits observed during facial emotion recognition in TRD and can be restored after starting a ketamine treatment.",
+      "authors": [
+        {
+          "name": "Zeynep Yoldas"
+        },
+        {
+          "name": "Willys Cantenys"
+        },
+        {
+          "name": "Morgane Tronche"
+        },
+        {
+          "name": "Sarah Hardy"
+        },
+        {
+          "name": "Orphée Morlaàs"
+        },
+        {
+          "name": "Lisa Thonon"
+        },
+        {
+          "name": "Alix Romier"
+        },
+        {
+          "name": "Luc Masset"
+        },
+        {
+          "name": "Marion Imbault"
+        },
+        {
+          "name": "Leonie Samion"
+        },
+        {
+          "name": "Anne Claret-Tournier"
+        },
+        {
+          "name": "philippe fossati"
+        },
+        {
+          "name": "Liane Schmidt"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
       "id": "10.1111/bjdp.12097",
       "title": "Developmental change and cross‐domain links in vocal and musical emotion recognition performance in childhood",
       "summary": "Although the configurations of psychoacoustic cues signalling emotions in human vocalizations and instrumental music are very similar, cross‐domain links in recognition performance have yet to be studied developmentally. Two hundred and twenty 5‐ to 10‐year‐old children were asked to identify musical excerpts and vocalizations as happy, sad, or fearful. The results revealed age‐related increases in overall recognition performance with significant correlations across vocal and musical conditions at all developmental stages. Recognition scores were greater for musical than vocal stimuli and were superior in females compared with males. These results confirm that recognition of emotions in vocal and musical stimuli is linked by 5 years and that sensitivity to emotions in auditory stimuli is influenced by age and gender.",
@@ -3805,6 +4689,55 @@
         },
         {
           "name": "Pamela Heaton"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
+      "id": "10.3390/s23031080",
+      "title": "Masked Face Emotion Recognition Based on Facial Landmarks and Deep Learning Approaches for Visually Impaired People",
+      "summary": "Current artificial intelligence systems for determining a person’s emotions rely heavily on lip and mouth movement and other facial features such as eyebrows, eyes, and the forehead. Furthermore, low-light images are typically classified incorrectly because of the dark region around the eyes and eyebrows. In this work, we propose a facial emotion recognition method for masked facial images using low-light image enhancement and feature analysis of the upper features of the face with a convolutional neural network. The proposed approach employs the AffectNet image dataset, which includes eight types of facial expressions and 420,299 images. Initially, the facial input image’s lower parts are covered behind a synthetic mask. Boundary and regional representation methods are used to indicate the head and upper features of the face. Secondly, we effectively adopt a facial landmark detection method-based feature extraction strategy using the partially covered masked face’s features. Finally, the features, the coordinates of the landmarks that have been identified, and the histograms of the oriented gradients are then incorporated into the classification procedure using a convolutional neural network. An experimental evaluation shows that the proposed method surpasses others by achieving an accuracy of 69.3% on the AffectNet dataset.",
+      "authors": [
+        {
+          "name": "Mukhriddin Mukhiddinov"
+        },
+        {
+          "name": "Oybek Djuraev"
+        },
+        {
+          "name": "Farkhod Akhmedov"
+        },
+        {
+          "name": "Abdinabi Mukhamadiyev"
+        },
+        {
+          "name": "Jinsoo Cho"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
+      "id": "10.31234/osf.io/kshw3_v1",
+      "title": "Unveiling Infant Surprise in a Social Context: A Multidimensional Analysis of Physiological, Behavioural, and Facial Expression Markers.",
+      "summary": "Surprise is a cornerstone of early learning, yet identifying it in preverbal infants is challenging because many of its markers are confounded with attention or social engagement. We aimed to identify indicators specific to surprise using behavioral and physiological measures. Ninety-nine infants aged 14–22 months observed five tool-use demonstrations presented either neutrally or surprisingly. We measured social gazes, facial expressions of surprise, freezing behavior, heart rate and electrodermal activity at 1- and 3-seconds post-stimulus. Bayesian mixed-effects models and factorial analyses were used to distinguish surprise from sustained attention or affect. Gaze duration toward the experimenter was the most reliable indicator of surprise: infants looked longer at the experimenter in the surprising than in the neutral condition, especially after the first demonstration. Facial expressions of surprise and freezing were higher in the surprising than in the neutral condition, but their persistence across demonstrations suggests that they indexed sustained attention rather than surprise per se. Heart rate emerged as a correlate of surprise-related arousal, mirroring the pattern observed for the duration of social gazes, whereas electrodermal activity followed a distinct profile, with larger responses in the neutral condition and associations with reduced gaze responses, interpreted as an index of frustration or fatigue. Factorial analyses provided converging evidence for this interpretation by isolating distinct clusters of measures linked to surprise and to sustained attention. Together, these findings illustrate how a multidimensional approach can disentangle surprise responses from longer-lasting attentional and affective processes, providing a robust framework for assessing emotion in infancy.",
+      "authors": [
+        {
+          "name": "Romain di Stasi"
+        },
+        {
+          "name": "Fabien Cerrotti"
+        },
+        {
+          "name": "Rana Esseily"
+        },
+        {
+          "name": "Lauriane Rat-Fischer"
         }
       ],
       "publishedAt": "2026-05-15",
@@ -3828,6 +4761,26 @@
         },
         {
           "name": "Christine Mohr"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
+      "id": "10.1177/01461672211068225",
+      "title": "Do People Know How Their Romantic Partner Views Their Emotions? Evidence for Emotion Meta-Accuracy and Links with Momentary Romantic Relationship Quality",
+      "summary": "Do people know how their romantic partner (i.e., the perceiver) views the self’s (i.e., the metaperceiver’s) emotions, displaying emotion meta-accuracy? Is it relevant to relationship quality? Using a sample of romantic couples (\n                    N\n                    couples\n                    = 189), we found evidence for two types of emotion meta-accuracy across three different interactions: (a)\n                    normative emotion meta-accuracy\n                    , knowing perceivers’ impressions of metaperceivers’ emotions that are in line with how the average person may feel, and (b)\n                    distinctive emotion meta-accuracy\n                    , knowing perceivers’ unique impression of metaperceivers’ emotions. Furthermore, across interactions, normative emotion meta-accuracy was positively related to momentary relationship quality for metaperceivers and perceivers and this link was especially strong in the conflict interaction. Distinctive emotion meta-accuracy was negatively related to momentary relationship quality across interactions for perceivers and in the conflict interaction for metaperceivers. Overall, it may be adaptive for metaperceivers to accurately infer perceivers’ normative impressions and to remain blissfully unaware of their unique impressions.",
+      "authors": [
+        {
+          "name": "Hasagani Tissera"
+        },
+        {
+          "name": "Jennifer L. Heyman"
+        },
+        {
+          "name": "Lauren J. Human"
         }
       ],
       "publishedAt": "2026-05-15",
@@ -3903,6 +4856,152 @@
         },
         {
           "name": "Nicholas C. Jacobson"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
+      "id": "10.1002/per.1935",
+      "title": "Personality Expression and Impression Formation in Online Social Networks: An Integrative Approach to Understanding the Processes of Accuracy, Impression Management and Meta–Accuracy",
+      "summary": "In this paper, we investigate personality expression and impression formation processes in online social networks (OSNs). We explore whether, when and why people accurately judge others’ personalities (accuracy), successfully manage the impressions that others form of them (impression management) and accurately infer others’ impressions of them (meta–accuracy) at zero acquaintance. On the basis of targets’ OSN profiles (N = 103), overall perceiver impressions were collected and compared with targets’ self–view, desired impression and meta–perception. In addition, independent groups of thin–slice perceivers based their personality impressions solely on one of four kinds of information within the OSN profiles (profile picture, interests field, group list and notice board), and more than 300 OSN cues (e.g. attractive person and number of friends) were coded. Results showed evidence of accuracy, impression management and meta–accuracy, but their extent was moderated by the trait (e.g. Big Five and self–esteem), the kind of information and the interplay of trait and information. Findings could be explained by cue expression and cue utilization processes (lens model analyses). Future prospects for studying personality impressions in online and offline environments are discussed. Copyright © 2013 European Association of Personality Psychology.",
+      "authors": [
+        {
+          "name": "Juliane M. Stopfer"
+        },
+        {
+          "name": "Boris Egloff"
+        },
+        {
+          "name": "Steffen Nestler"
+        },
+        {
+          "name": "Mitja D. Back"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
+      "id": "10.1111/psyp.13812",
+      "title": "Attentive immobility in the face of inevitable distal threat—Startle potentiation and fear bradycardia as an index of emotion and attention",
+      "summary": "AbstractDuring fear conditioning, a cue (CS) signals an inevitable distal threat (US) and evokes a conditioned response that can be described as attentive immobility (freezing). The organism remains motionless and monitors the source of danger while startle responses are potentiated, indicating a state of defensive hypervigilance. Although in animals vagally mediated fear bradycardia is also reliably observed under such circumstances, results are mixed in human fear conditioning. Using a single‐cue fear conditioning and extinction protocol, we tested cardiac reactivity and startle potentiation indexing low‐level defensive strategies in a fear‐conditioned (n = 40; paired presentations of CS and US) compared with a non‐conditioned control group (n = 40; unpaired presentations of CS and US). Additionally, we assessed shock expectancy ratings on a trial‐by‐trial basis indexing declarative knowledge of the previous contingencies. Half of each group underwent extinction under sham or active transcutaneous vagus nerve stimulation (tVNS), serving as additional proof of concept. We found stronger cardiac deceleration during CS presentation in the fear learning relative to the control group. This learned fear bradycardia was positively correlated with conditioned startle potentiation but not with declarative knowledge of CS‐US contingencies. TVNS abolished differences in heart rate changes between both groups and removed the significant correlation between late cardiac deceleration and startle potentiation in the fear learning group. Results suggest, fear‐conditioned cues evoke attentive immobility in humans, characterized by cardiac deceleration and startle potentiation. Such defensive response pattern is elicited by cues predicting inevitable distal threat and resembles conditioned fear responses observed in rodents.",
+      "authors": [
+        {
+          "name": "Christoph Szeska"
+        },
+        {
+          "name": "Jan Richter"
+        },
+        {
+          "name": "Julia Wendt"
+        },
+        {
+          "name": "Mathias Weymar"
+        },
+        {
+          "name": "Alfons O. Hamm"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
+      "id": "10.1017/neu.2023.61",
+      "title": "Social cognition, emotion regulation and social competence in classical galactosemia patients without intellectual disability",
+      "summary": "AbstractObjective:Classical galactosemia (CG) is an inborn error of galactose metabolism. Many CG patients suffer from long-term complications including poor cognitive functioning. There are indications of social dysfunction but limited evidence in the literature. Therefore, this study aims to improve our understanding of social competence in CG by investigating social cognition, neurocognition and emotion regulation.Methods:A comprehensive (neuro)psychological test battery, including self and proxy questionnaires, was administered to CG patients without intellectual disability. Social cognition was assessed by facial emotion recognition, Theory of Mind and self-reported empathy. Standardised results were compared to normative data of the general population.Results:Data from 23 patients (aged 8–52) were included in the study. On a group level, CG patients reported satisfaction with social roles and no social dysfunction despite the self-report of lower social skills. They showed deficits in all aspects of social cognition on both performance tests (emotion recognition and Theory of Mind) and self-report questionnaires (empathy). Adults had a lower social participation than the general population. Parents reported lower social functioning, less adaptive emotion regulation and communication difficulties in their children. Individual differences in scores were present.Conclusion:This study shows that CG patients without intellectual disability are satisfied with their social competence, especially social functioning. Nevertheless, deficits in social cognition are present in a large proportion of CG patients. Due to the large variability in scores and discrepancies between self- and proxy-report, an individually tailored, comprehensive neuropsychological assessment including social cognition is advised in all CG patients. Treatment plans need to be customised to the individual patient.",
+      "authors": [
+        {
+          "name": "Merel E. Hermans"
+        },
+        {
+          "name": "Gert J. Geurtsen"
+        },
+        {
+          "name": "Carla E.M. Hollak"
+        },
+        {
+          "name": "Mirian C.H. Janssen"
+        },
+        {
+          "name": "Janneke G. Langendonk"
+        },
+        {
+          "name": "Valerie L.V. Merckelbach"
+        },
+        {
+          "name": "Esmee Oussoren"
+        },
+        {
+          "name": "Kim J. Oostrom"
+        },
+        {
+          "name": "Annet M. Bosch"
+        }
+      ],
+      "publishedAt": "2026-05-15",
+      "source": "Crossref"
+    }
+  },
+  {
+    "paper": {
+      "id": "10.1177/17456916251319045",
+      "title": "The Theory of Constructed Emotion: More Than a Feeling",
+      "summary": "A recently published article by van Heijst et al. attempted to reconcile two research approaches in the science of emotion—basic emotion theory and the theory of constructed emotion—by suggesting that the former explains\n                    emotions\n                    as bioregulatory states of the body whereas the latter explains\n                    feelings\n                    that arise from those state changes. This bifurcation of emotion into objective physical states and subjective feelings involves three misleading simplifications that fundamentally misrepresent the theory of constructed emotion and prevent progress in the science of emotion. In this article we identify these misleading simplifications and the resulting factual errors, empirical oversights, and evolutionary oversimplifications. We then discuss why such errors will continue to arise until scientists realize that the two theories are intrinsically irreconcilable. They rest on incommensurate assumptions and require different methods of evaluation. Only by directly considering these differences will these research silos in the science of emotion finally dissolve, speeding the accumulation of trustworthy scientific knowledge about emotion that is usable in the real world.",
+      "authors": [
+        {
+          "name": "Lisa Feldman Barrett"
+        },
+        {
+          "name": "Shir Atzil"
+        },
+        {
+          "name": "Eliza Bliss-Moreau"
+        },
+        {
+          "name": "Lorena Chanes"
+        },
+        {
+          "name": "Maria Gendron"
+        },
+        {
+          "name": "Katie Hoemann"
+        },
+        {
+          "name": "Yuta Katsumi"
+        },
+        {
+          "name": "Ian R. Kleckner"
+        },
+        {
+          "name": "Kristen A. Lindquist"
+        },
+        {
+          "name": "Karen S. Quigley"
+        },
+        {
+          "name": "Ajay B. Satpute"
+        },
+        {
+          "name": "Eli Sennesh"
+        },
+        {
+          "name": "Clare Shaffer"
+        },
+        {
+          "name": "Jordan E. Theriault"
+        },
+        {
+          "name": "Michele Tugade"
+        },
+        {
+          "name": "Christiana Westlin"
         }
       ],
       "publishedAt": "2026-05-15",
