@@ -1,13 +1,19 @@
-# HF🤗每日简报机器人
+# Psy🤗每日简报机器人
 > [English Documentation](README.md)
 
-该机器人能自动从 [🤗 Daily Papers](https://huggingface.co/papers) 收集paper信息，然后使用 DeepSeek 进行解读。
+该机器人能自动从 [Pubmed](https://pubmed.ncbi.nlm.nih.gov/) 和[Crossref](https://www.crossref.org/)收集paper信息，然后使用 DeepSeek 进行解读。
 
 ## 🚀 主要功能
 
-- ✅ 自动从 [🤗 Daily Papers](https://huggingface.co/papers) 获取paper信息
+- ✅ 自动从[Pubmed](https://pubmed.ncbi.nlm.nih.gov/) 和[Crossref](https://www.crossref.org/)获取paper信息
+- ✅ 使用 DeepSeek API 进行论文筛选，筛选标准如下：
+      1. 情绪/情感的心理学或神经科学研究（Emotion, Affect, 情绪感知/表达/体验等）
+      2. 面部表情或语音表情（Facial/Vocal Expression）
+      3. 社会认知、人际关系、印象形成或人格
+      4. 人工智能（AI、机器学习、深度学习）在上述心理/情绪/认知领域的交叉应用。
+      ⚠️ 排除标准：如果是纯粹的临床躯体疾病（如糖尿病、骨折、肿瘤）、纯细胞生物学机制、或者AI仅用于无关的普通医学图像识别，请严格判定为不相关。
 - ✅ 使用 DeepSeek API 进行智能论文解读
-- ✅ 生成论文的中文解读信息
+- ✅ 生成论文的中文解读信息，包括标题、摘要、关键词
 - ✅ 自动生成每日论文海报
 - ✅ 生成关键词云图和趋势分析
 - ✅ 支持语音播报功能
@@ -26,7 +32,23 @@
    - Value: 您的 DeepSeek API Key
    - 点击 "Add secret" 保存
 
-3. 启用 GitHub Actions：
+3. 配置 DeepSeek API Key：
+   - 访问您的 GitHub 仓库
+   - 点击 "Settings" > "Security" > "Secrets and variables" > "Actions"
+   - 点击 "New repository secret"
+   - Name: `NCBI_API_KEY`
+   - Value: 您的 NCBI API Key
+   - 点击 "Add secret" 保存
+
+4. 配置 NCBI EMAIL：
+   - 访问您的 GitHub 仓库
+   - 点击 "Settings" > "Security" > "Secrets and variables" > "Actions"
+   - 点击 "New repository secret"
+   - Name: `NCBI_EMAIL`
+   - Value: 注册NCBI时的邮箱
+   - 点击 "Add secret" 保存
+
+5. 启用 GitHub Actions：
    - 访问仓库的 "Actions" 选项卡
    - 点击 "I understand my workflows, go ahead and enable them"
 
